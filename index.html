@@ -1,0 +1,1089 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="Excursões de ônibus com hotel, roteiro e parcelamento. Reserve pelo WhatsApp."><meta property="og:type" content="website"><meta property="og:title" content="Lunas Tour · Agência de viagens"><meta property="og:description" content="É preciso viver, e a Lunas Tour leva você! Excursões com hotel, roteiro e parcelamento."><meta property="og:image" content="https://douradojr12.github.io/Lunas-Tour/fotos/gramado1.jpg"><meta property="og:url" content="https://douradojr12.github.io/Lunas-Tour/"><meta name="theme-color" content="#0A7FC0"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>Lunas Tour</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Cinzel:wght@600;700&family=Caveat:wght@600;700&display=swap">
+<style id="app-style">
+/* Layout: an ocean-and-sun travel desk. Photo stages carry the emotion; boarding-pass stubs carry dates, seats and times. */
+:root{
+  --bg:#EFF6FA; --surface:#FFFFFF; --surface-2:#E1EEF5; --ink:#0B2236; --muted:#4D6A7E; --line:#CCDFEA;
+  --brand:#0A7FC0; --brand-ink:#FFFFFF; --cyan:#17BFE6; --accent:#FFB531; --accent-ink:#2B1A00;
+  --danger:#C23B2A; --ok:#14865A; --wa:#178F4C; --wa-ink:#FFFFFF; --photo-ink:#FFFFFF;
+  --shadow:0 1px 2px rgba(11,34,54,.06),0 12px 32px -14px rgba(11,34,54,.28);
+  --f-display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --f-body:"Figtree","Segoe UI",system-ui,-apple-system,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --f-brand:"Cinzel","Trajan Pro",Georgia,serif;
+  --f-hand:"Caveat","Segoe Print","Bradley Hand",cursive;
+  --r:16px; --ease:cubic-bezier(.2,.8,.2,1);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#06131D; --surface:#0D2131; --surface-2:#143049; --ink:#E2F0F8; --muted:#8EAEC2; --line:#1F3D53;
+  --brand:#3DB6F0; --brand-ink:#02182A; --cyan:#4FD7F3; --accent:#FFC14F; --accent-ink:#241500;
+  --danger:#F2826E; --ok:#4FCB92; --wa:#2FBF6E; --wa-ink:#03200F; --shadow:0 1px 2px rgba(0,0,0,.35),0 14px 34px -14px rgba(0,0,0,.7); color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#06131D; --surface:#0D2131; --surface-2:#143049; --ink:#E2F0F8; --muted:#8EAEC2; --line:#1F3D53;
+  --brand:#3DB6F0; --brand-ink:#02182A; --cyan:#4FD7F3; --accent:#FFC14F; --accent-ink:#241500;
+  --danger:#F2826E; --ok:#4FCB92; --wa:#2FBF6E; --wa-ink:#03200F; --shadow:0 1px 2px rgba(0,0,0,.35),0 14px 34px -14px rgba(0,0,0,.7); color-scheme:dark }
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+a{color:var(--brand)}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+.hand{font-family:var(--f-hand);font-weight:700}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--surface)}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:16px;padding-block:10px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);min-width:0}
+.logo-mark{width:48px;height:48px;border-radius:50%;flex:none;overflow:hidden;box-shadow:0 0 0 2px var(--surface),0 4px 14px -4px rgba(10,127,192,.6);transition:transform .6s var(--ease)}
+.logo:hover .logo-mark{transform:rotate(-12deg) scale(1.06)}
+.logo-mark svg,.logo-mark img{width:100%;height:100%;display:block;object-fit:cover}
+.logo-txt{display:grid;line-height:1}
+.logo-txt b{font-family:var(--f-brand);font-size:21px;letter-spacing:.04em}
+.logo-txt span{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:4px;font-weight:600}
+.nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.nav a{text-decoration:none;color:var(--ink);font-weight:600;font-size:15px;padding:8px 12px;border-radius:999px;transition:background .2s}
+.nav a:hover{background:var(--surface-2)}
+.nav a.cta{background:var(--accent);color:var(--accent-ink)}
+
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 22px;font-weight:700;font-size:15px;cursor:pointer;text-decoration:none;line-height:1.2;transition:transform .2s var(--ease),filter .2s,box-shadow .2s;overflow:hidden;isolation:isolate}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn-brand{background:var(--brand);color:var(--brand-ink);box-shadow:0 10px 24px -12px var(--brand)}
+.btn-accent{background:var(--accent);color:var(--accent-ink);box-shadow:0 10px 24px -12px var(--accent)}
+.btn-wa{background:var(--wa);color:var(--wa-ink)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn-ghost:hover{background:var(--surface-2)}
+.btn-glass{background:rgba(255,255,255,.16);color:var(--photo-ink);border:1.5px solid rgba(255,255,255,.45);backdrop-filter:blur(8px)}
+.btn-danger{background:transparent;color:var(--danger);border:1.5px solid color-mix(in srgb,var(--danger) 40%,transparent)}
+.btn-sm{padding:8px 14px;font-size:14px}
+.btn[disabled]{opacity:.55;cursor:not-allowed;transform:none}
+.btn-accent::after,.btn-brand::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);transform:translateX(-120%);transition:transform .8s var(--ease)}
+.btn-accent:hover::after,.btn-brand:hover::after{transform:translateX(120%)}
+
+.hero{padding-block:18px 8px}
+.stage{position:relative;border-radius:28px;overflow:hidden;min-height:clamp(480px,66vh,660px);background:#0B2236;isolation:isolate;box-shadow:var(--shadow)}
+.slide{position:absolute;inset:-4%;opacity:0;transition:opacity 1.4s ease;transform:translate3d(calc(var(--px,0)*-18px),calc(var(--py,0)*-12px),0)}
+.slide img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.04)}
+.slide.on{opacity:1}
+.slide.on img{animation:kb 9s ease-out both}
+@keyframes kb{from{transform:scale(1.18) translate(-1.5%,1%)}to{transform:scale(1.04) translate(0,0)}}
+.stage::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(4,18,30,.8) 0%,rgba(4,18,30,.38) 55%,rgba(4,18,30,.08) 100%),linear-gradient(0deg,rgba(4,18,30,.6),transparent 45%)}
+.stage-in{position:relative;z-index:2;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:end;min-height:inherit;padding:clamp(22px,4vw,48px)}
+.hero-copy{color:var(--photo-ink);display:grid;gap:14px;align-self:center;max-width:640px}
+.chip-ph{display:inline-flex;gap:8px;align-items:center;width:fit-content;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(8px);padding:6px 12px;border-radius:999px;font-size:13px;font-weight:600;color:var(--photo-ink)}
+.hero-copy h1{font-size:clamp(40px,6.6vw,80px);font-weight:800;line-height:.98}
+.hero-copy .hand{font-size:clamp(30px,4.4vw,52px);color:var(--accent);line-height:1;transform:rotate(-2deg);transform-origin:left}
+.hero-copy p.lead{font-size:18px;opacity:.9;max-width:46ch}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.rise{animation:rise .9s var(--ease) both}
+.rise.d1{animation-delay:.08s}.rise.d2{animation-delay:.16s}.rise.d3{animation-delay:.24s}.rise.d4{animation-delay:.32s}
+@keyframes rise{from{opacity:0;transform:translateY(26px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+.hero-side{display:grid;gap:14px;justify-items:end;align-self:stretch;align-content:space-between}
+.side-low{display:grid;gap:12px;justify-items:inherit;width:100%}
+.badge-logo{width:clamp(110px,14vw,170px);aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 18px 40px -12px rgba(0,0,0,.6);animation:float 6s ease-in-out infinite;max-width:100%}
+.badge-logo svg,.badge-logo img{width:100%;height:100%;display:block;object-fit:cover}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(3deg)}}
+.dots{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.dot{border:0;background:rgba(255,255,255,.16);color:var(--photo-ink);border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;cursor:pointer;backdrop-filter:blur(6px);position:relative;overflow:hidden}
+.dot.on{background:rgba(255,255,255,.3)}
+.dot.on::after{content:"";position:absolute;left:0;bottom:0;height:2px;background:var(--accent);animation:prog 6s linear both}
+@keyframes prog{from{width:0}to{width:100%}}
+.plane{position:absolute;z-index:2;top:12%;left:-60px;color:rgba(255,255,255,.85);animation:fly 16s linear infinite;pointer-events:none}
+@keyframes fly{0%{transform:translate(0,40px) rotate(-8deg)}100%{transform:translate(calc(100vw + 120px),-60px) rotate(-8deg)}}
+.marquee{overflow:hidden;padding-block:18px;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee-in{display:flex;gap:28px;width:max-content;animation:mq 40s linear infinite}
+.marquee span{font-family:var(--f-display);font-weight:700;font-size:22px;color:var(--muted);white-space:nowrap;display:flex;gap:28px;align-items:center}
+.marquee span i{width:8px;height:8px;border-radius:50%;background:var(--cyan);display:block}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+.pass{background:var(--surface);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;border:1px solid var(--line);color:var(--ink)}
+.pass-head{background:linear-gradient(110deg,var(--brand),var(--cyan));color:var(--brand-ink);padding:12px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.pass-head .eyebrow{color:inherit;opacity:.9}
+.pass-body{padding:16px 18px;display:grid;gap:12px}
+.route{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px}
+.route .pt{min-width:0}
+.route .pt b{display:block;font-family:var(--f-display);font-size:20px;line-height:1.1}
+.route .pt span{font-size:13px;color:var(--muted)}
+.route .pt:last-child{text-align:right}
+.route .bus{color:var(--brand);position:relative;width:86px;height:24px}
+.route .bus::before{content:"";position:absolute;left:0;right:0;top:50%;border-top:2px dashed var(--line)}
+.route .bus svg{position:absolute;top:0;left:0;animation:drive 3.6s var(--ease) infinite alternate;background:var(--surface)}
+@keyframes drive{from{left:0}to{left:calc(100% - 22px)}}
+.perf{position:relative;height:0;border-top:2px dashed var(--line);margin:0 -18px}
+.perf::before,.perf::after{content:"";position:absolute;top:-11px;width:20px;height:20px;border-radius:50%;background:var(--bg)}
+.perf::before{left:-10px}.perf::after{right:-10px}
+.stub{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stub div{min-width:0}
+.stub small{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-family:var(--f-mono)}
+.stub b{font-family:var(--f-mono);font-size:15px;font-variant-numeric:tabular-nums}
+.hero-pass{width:min(360px,100%);transition:transform .4s var(--ease)}
+.hero-pass:hover{transform:translateY(-4px) rotate(-1deg)}
+.stage .pass .perf::before,.stage .pass .perf::after{background:#0B2236}
+
+section.block{padding-block:28px 36px}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.sec-head h2{font-size:clamp(28px,3.6vw,40px);font-weight:800}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chip{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 14px;font-weight:600;font-size:14px;cursor:pointer;transition:all .25s var(--ease)}
+.chip:hover{border-color:var(--brand)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.search{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 14px;min-width:0;width:220px;max-width:100%}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:22px;perspective:1200px}
+.card{position:relative;background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid var(--line);transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateZ(0);transition:transform .5s var(--ease),box-shadow .3s;transform-style:preserve-3d}
+.card.tilt{transition:transform .08s linear,box-shadow .3s}
+.card:hover{box-shadow:0 30px 60px -24px rgba(11,34,54,.5)}
+.card::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:radial-gradient(600px circle at var(--gx,50%) var(--gy,0%),rgba(255,255,255,.22),transparent 40%);opacity:0;transition:opacity .3s}
+.card:hover::after{opacity:1}
+.card-img{position:relative;aspect-ratio:16/10;background:var(--surface-2);max-width:100%;overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s var(--ease)}
+.card:hover .card-img img{transform:scale(1.09)}
+.badges{position:absolute;top:10px;left:10px;right:10px;display:flex;gap:6px;flex-wrap:wrap}
+.badge{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--surface);color:var(--ink);line-height:1.3}
+.badge.hot{background:var(--accent);color:var(--accent-ink)}
+.badge.off{background:var(--ink);color:var(--bg)}
+.badge.ex{background:color-mix(in srgb,var(--surface) 80%,transparent);color:var(--muted);backdrop-filter:blur(4px)}
+.count-tag{position:absolute;bottom:10px;right:10px;font-family:var(--f-mono);font-size:12px;font-weight:600;background:rgba(4,18,30,.7);color:var(--photo-ink);padding:4px 9px;border-radius:8px;backdrop-filter:blur(4px)}
+.card-body{padding:16px 16px 12px;display:grid;gap:6px;flex:1;align-content:start}
+.card-body h3{font-size:21px;font-weight:700}
+.card-body .dest{font-size:14px;color:var(--muted)}
+.card-stub{border-top:2px dashed var(--line);padding:12px 16px 14px;display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap}
+.card-stub .when{font-family:var(--f-mono);font-size:13px;line-height:1.5}
+.price{text-align:right}
+.price small{display:block;font-size:12px;color:var(--muted)}
+.price b{font-family:var(--f-display);font-size:23px;line-height:1.1}
+.price span{display:block;font-size:12.5px;color:var(--brand);font-weight:700}
+.empty{background:var(--surface);border:1.5px dashed var(--line);border-radius:var(--r);padding:36px 20px;text-align:center;display:grid;gap:10px;justify-items:center}
+@supports (animation-timeline: view()){
+  .reveal{animation:revealIn linear both;animation-timeline:view();animation-range:entry 0% cover 22%}
+  @keyframes revealIn{from{opacity:.25;transform:translateY(46px) scale(.96)}to{opacity:1;transform:none}}
+}
+
+.custom-band{position:relative;overflow:hidden;background:linear-gradient(120deg,#0B2236,#0A4F7A 60%,#0A7FC0);color:var(--photo-ink);border-radius:24px;padding:clamp(22px,4vw,40px);display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.custom-band::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;right:-120px;top:-160px;background:radial-gradient(circle,#FFB531,transparent 65%);opacity:.35;animation:sun 9s ease-in-out infinite alternate}
+@keyframes sun{to{transform:translate(-60px,40px) scale(1.15)}}
+.custom-band>*{position:relative}
+.custom-band h2{font-size:clamp(26px,3.2vw,38px)}
+.custom-band p{opacity:.85;margin-top:8px;max-width:58ch}
+.faq{display:grid;gap:10px;max-width:860px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 18px;transition:background .3s}
+.faq details[open]{background:var(--surface-2)}
+.faq summary{cursor:pointer;font-weight:700;padding:12px 0;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:22px;color:var(--brand);transition:transform .35s var(--ease);flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding-bottom:14px;color:var(--muted);white-space:pre-line;animation:rise .45s var(--ease) both}
+
+footer{border-top:1px solid var(--line);margin-top:40px;background:var(--surface)}
+footer .wrap{padding-block:26px 36px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+footer a{color:var(--muted)}
+.credits{font-size:12.5px;max-width:620px}
+.credits ul{margin:8px 0 0;padding-left:18px;display:grid;gap:3px}
+.fab{position:fixed;right:max(18px,calc(env(safe-area-inset-right,0px) + 18px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:15;width:58px;height:58px;border-radius:50%;background:var(--wa);color:var(--wa-ink);display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.45)}
+.fab::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:ping 2.2s ease-out infinite}
+@keyframes ping{from{transform:scale(1);opacity:.8}to{transform:scale(1.7);opacity:0}}
+
+.back{display:inline-flex;align-items:center;gap:6px;margin-block:16px 12px;font-weight:600;text-decoration:none;color:var(--muted)}
+.d-hero{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:21/9;background:#0B2236;max-width:100%;cursor:zoom-in;isolation:isolate}
+.d-hero .layer{position:absolute;inset:0}
+.d-hero .layer img{width:100%;height:100%;object-fit:cover;display:block}
+.d-hero .layer.kb img{animation:kb 12s ease-out both}
+.d-hero::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(0deg,rgba(4,18,30,.8),rgba(4,18,30,.1) 55%,transparent);pointer-events:none}
+.d-hero-txt{position:absolute;z-index:3;left:clamp(16px,3vw,32px);right:clamp(16px,3vw,32px);bottom:clamp(16px,3vw,28px);color:var(--photo-ink);display:grid;gap:8px;pointer-events:none}
+.d-hero-txt h1{font-size:clamp(28px,5vw,60px);font-weight:800}
+.d-hero-txt .eyebrow{color:rgba(255,255,255,.85)}
+.d-hero .zoom{position:absolute;z-index:3;top:14px;right:14px;background:rgba(4,18,30,.55);color:var(--photo-ink);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;backdrop-filter:blur(6px);pointer-events:none}
+.d-hero .credit{position:absolute;z-index:3;top:16px;left:16px;font-size:11px;color:rgba(255,255,255,.8);max-width:55%;pointer-events:none;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+.thumbs{display:flex;gap:10px;overflow-x:auto;padding:12px 4px 6px}
+.thumbs button{position:relative;border:0;padding:0;border-radius:12px;overflow:hidden;width:104px;height:70px;flex:none;cursor:pointer;background:var(--surface-2);transition:transform .35s var(--ease),box-shadow .35s}
+.thumbs button:hover{transform:translateY(-3px) scale(1.04)}
+.thumbs button[aria-current="true"]{box-shadow:0 0 0 3px var(--accent);transform:translateY(-3px)}
+.thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.detail{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:28px;align-items:start;margin-top:14px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:grid;gap:12px}
+.panel h3{font-size:20px}
+.stack{display:grid;gap:18px}
+.enter>*{animation:rise .8s var(--ease) both}
+.enter>*:nth-child(2){animation-delay:.07s}.enter>*:nth-child(3){animation-delay:.14s}.enter>*:nth-child(4){animation-delay:.21s}.enter>*:nth-child(n+5){animation-delay:.28s}
+.prose{white-space:pre-line;max-width:68ch}
+.timeline{display:grid;margin:0;padding:0;list-style:none}
+.timeline li{display:grid;grid-template-columns:84px 1fr;gap:14px;padding-block:10px;border-top:1px solid var(--line)}
+.timeline li:first-child{border-top:0}
+.timeline .day{font-family:var(--f-mono);font-size:13px;color:var(--brand);font-weight:600;padding-top:2px}
+.lists{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.lists ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.lists li{display:flex;gap:8px;align-items:flex-start}
+.lists li svg{flex:none;margin-top:4px}
+.amen{display:flex;gap:6px;flex-wrap:wrap}
+.amen span{background:var(--surface-2);border-radius:999px;padding:5px 12px;font-size:13.5px;font-weight:600}
+.stars{color:var(--accent);letter-spacing:2px}
+.hotel-pics{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
+.hotel-pics button{border:0;padding:0;border-radius:12px;overflow:hidden;cursor:zoom-in;background:var(--surface-2)}
+.hotel-pics img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;max-width:100%;transition:transform .8s var(--ease)}
+.hotel-pics button:hover img{transform:scale(1.08)}
+.aside{position:sticky;top:calc(env(safe-area-inset-top,0px) + 84px);display:grid;gap:16px}
+.bigprice{font-family:var(--f-display);font-size:40px;font-weight:800;line-height:1}
+.pix{display:inline-flex;gap:6px;align-items:center;background:color-mix(in srgb,var(--ok) 14%,transparent);color:var(--ok);font-weight:700;padding:5px 10px;border-radius:8px;font-size:14px;width:fit-content}
+.inst{width:100%;border-collapse:collapse;font-size:14.5px}
+.inst td{padding:7px 0;border-top:1px solid var(--line)}
+.inst td:last-child{text-align:right;font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.inst tr.free td:first-child::after{content:" sem juros";color:var(--ok);font-weight:600;font-size:12.5px}
+details.more summary{cursor:pointer;font-weight:600;color:var(--brand)}
+.vagas{display:grid;gap:6px}
+.bar{height:8px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--accent));border-radius:99px;transform-origin:left;animation:grow 1.4s var(--ease) both}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.countdown{display:inline-flex;gap:8px;align-items:center;background:var(--accent);color:var(--accent-ink);font-weight:800;border-radius:999px;padding:5px 12px;font-size:13.5px;width:fit-content}
+.sim{background:var(--surface-2);border-radius:12px;padding:12px 14px;display:grid;gap:4px;font-size:14.5px}
+.sim b.total{font-family:var(--f-display);font-size:24px}
+
+.bus-map{display:grid;gap:10px;justify-items:center}
+.bus-body{border:2px solid var(--line);border-radius:38px 38px 14px 14px;padding:16px 14px 14px;background:var(--bg);display:grid;gap:7px;width:max-content;max-width:100%}
+.bus-front{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:11px;color:var(--muted);font-family:var(--f-mono);padding-bottom:6px;border-bottom:1px dashed var(--line);margin-bottom:4px}
+.bus-row{display:grid;grid-template-columns:34px 34px 20px 34px 34px;gap:6px}
+.seat{width:34px;height:34px;border-radius:9px 9px 6px 6px;border:1.5px solid var(--line);background:var(--surface);font-family:var(--f-mono);font-size:11px;font-weight:600;cursor:pointer;display:grid;place-items:center;transition:transform .25s var(--ease),background .2s,color .2s;padding:0}
+.seat:hover:not(.occ){border-color:var(--brand);transform:translateY(-2px)}
+.seat.occ{background:var(--surface-2);color:var(--muted);text-decoration:line-through;cursor:not-allowed;opacity:.7}
+.seat.sel{background:var(--brand);color:var(--brand-ink);border-color:var(--brand);animation:pop .45s var(--ease)}
+.adm .seat.occ{cursor:pointer;background:var(--ink);color:var(--bg);opacity:1;text-decoration:none}
+@keyframes pop{0%{transform:scale(.7)}60%{transform:scale(1.18)}100%{transform:scale(1)}}
+.legend{display:flex;gap:14px;font-size:12.5px;color:var(--muted);flex-wrap:wrap;justify-content:center}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;border:1.5px solid var(--line);vertical-align:-2px;margin-right:5px;background:var(--surface)}
+.legend i.o{background:var(--surface-2)}.legend i.s{background:var(--brand);border-color:var(--brand)}
+
+.lb{position:fixed;inset:0;z-index:50;height:100%;height:100dvh;background:rgba(3,12,20,.95);display:grid;grid-template-rows:auto minmax(0,1fr) auto;color:#FFFFFF;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.lb-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px max(16px,env(safe-area-inset-right,0px)) 12px max(16px,env(safe-area-inset-left,0px))}
+.lb-top b{font-family:var(--f-display);font-size:18px}
+.lb-stage{position:relative;overflow:hidden;touch-action:pan-y;min-height:0}
+.lb-stage .lyr{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:8px clamp(8px,6vw,80px)}
+.lb-stage img{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;border-radius:10px;box-shadow:0 30px 80px -20px rgba(0,0,0,.8)}
+.lb-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#FFFFFF;font-size:26px;cursor:pointer;backdrop-filter:blur(6px);transition:background .2s}
+.lb-btn:hover{background:rgba(255,255,255,.25)}
+.lb-prev{left:max(12px,env(safe-area-inset-left,0px))}.lb-next{right:max(12px,env(safe-area-inset-right,0px))}
+.lb-x{border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#FFFFFF;border-radius:999px;padding:8px 14px;cursor:pointer;font-weight:700}
+.lb-foot{display:grid;gap:10px;padding:10px max(16px,env(safe-area-inset-right,0px)) 16px max(16px,env(safe-area-inset-left,0px))}
+.lb-cap{display:flex;justify-content:space-between;gap:12px;font-size:12.5px;opacity:.8;flex-wrap:wrap}
+.lb-strip{display:flex;gap:8px;overflow-x:auto;justify-content:center;padding:4px}
+.lb-strip button{border:0;padding:0;width:72px;height:48px;border-radius:8px;overflow:hidden;opacity:.5;cursor:pointer;flex:none;transition:opacity .3s,transform .3s}
+.lb-strip button[aria-current="true"]{opacity:1;transform:scale(1.08);outline:2px solid #FFB531}
+.lb-strip img{width:100%;height:100%;object-fit:cover;display:block}
+.flip{position:fixed;z-index:60;overflow:hidden;pointer-events:none;box-shadow:0 40px 100px -20px rgba(0,0,0,.6)}
+.flip img{width:100%;height:100%;object-fit:cover;display:block}
+.wash{position:fixed;inset:0;z-index:59;pointer-events:none;background:radial-gradient(circle at var(--cx) var(--cy),rgba(23,191,230,.35),rgba(4,18,30,.6) 60%)}
+
+.form{display:grid;gap:14px}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.field{display:grid;gap:6px;min-width:0}
+.field label{font-weight:600;font-size:14px}
+.field .hint{font-size:12.5px;color:var(--muted)}
+.field input,.field select,.field textarea{width:100%;border:1.5px solid var(--line);background:var(--bg);border-radius:10px;padding:10px 12px;min-width:0;transition:border-color .2s,box-shadow .2s}
+.field textarea{min-height:96px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--brand);outline:none;box-shadow:0 0 0 4px color-mix(in srgb,var(--brand) 20%,transparent)}
+.field.err input,.field.err textarea{border-color:var(--danger);animation:shake .4s}
+@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.field .errmsg{color:var(--danger);font-size:13px;font-weight:600}
+.msg-preview{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px;font-family:var(--f-mono);font-size:13px;white-space:pre-wrap;max-height:240px;overflow:auto}
+.notice{border-radius:12px;padding:12px 14px;font-size:14.5px;background:color-mix(in srgb,var(--accent) 18%,transparent);border:1px solid color-mix(in srgb,var(--accent) 50%,transparent)}
+.notice.bad{background:color-mix(in srgb,var(--danger) 12%,transparent);border-color:color-mix(in srgb,var(--danger) 40%,transparent)}
+.custom-hero{position:relative;border-radius:24px;overflow:hidden;min-height:260px;display:grid;align-items:end;color:var(--photo-ink);margin-top:16px;background:#0B2236}
+.custom-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:kb 14s ease-out both}
+.custom-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,18,30,.85),rgba(4,18,30,.3))}
+.custom-hero>div{position:relative;z-index:1;padding:clamp(20px,4vw,40px);display:grid;gap:8px;max-width:680px}
+.custom-hero h1{font-size:clamp(32px,5vw,56px)}
+.custom-layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:24px;align-items:start;padding-block:22px 10px}
+.ideas{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.ideas button{border:1.5px dashed var(--line);background:transparent;border-radius:999px;padding:6px 12px;font-size:13.5px;font-weight:600;cursor:pointer;transition:all .25s var(--ease)}
+.ideas button:hover{border-style:solid;border-color:var(--brand);color:var(--brand);transform:translateY(-2px)}
+.copyrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+
+.admin-top{background:var(--ink);color:var(--bg)}
+.admin-top .logo{color:var(--bg)}
+.admin-top .logo-txt span{color:color-mix(in srgb,var(--bg) 70%,transparent)}
+.admin-top .nav a{color:var(--bg)}
+.admin-top .nav a:hover{background:color-mix(in srgb,var(--bg) 14%,transparent)}
+.login{max-width:440px;margin:40px auto}
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);margin-block:20px;overflow-x:auto}
+.tabs button{border:0;background:none;padding:10px 14px;font-weight:700;cursor:pointer;border-bottom:3px solid transparent;color:var(--muted);white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.alist{display:grid;gap:10px}
+.aitem{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:14px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px}
+.aitem img{width:96px;height:64px;object-fit:cover;border-radius:8px;display:block}
+.aitem h4{font-size:17px}
+.aitem .acts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.status{font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--surface-2)}
+.status.aberta{background:color-mix(in srgb,var(--ok) 16%,transparent);color:var(--ok)}
+.status.esgotada{background:color-mix(in srgb,var(--accent) 22%,transparent)}
+.status.rascunho,.status.encerrada{color:var(--muted)}
+.editor{display:grid;gap:18px;padding-bottom:110px}
+.editor fieldset{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:18px;margin:0;display:grid;gap:14px;min-width:0}
+.editor legend{font-family:var(--f-display);font-weight:700;font-size:19px;padding:0 6px}
+.imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
+.imgbox{position:relative;border-radius:10px;overflow:hidden;background:var(--surface-2);aspect-ratio:4/3;max-width:100%}
+.imgbox img{width:100%;height:100%;object-fit:cover;display:block}
+.imgbox .ctrl{position:absolute;inset:auto 0 0 0;display:flex;gap:4px;padding:6px;background:linear-gradient(transparent,rgba(0,0,0,.6));justify-content:flex-end}
+.imgbox .ctrl button{border:0;border-radius:6px;background:rgba(255,255,255,.92);color:#0B2236;font-size:12px;font-weight:700;padding:4px 7px;cursor:pointer}
+.imgbox .cover{position:absolute;top:6px;left:6px;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:800;padding:2px 8px;border-radius:99px}
+.drop{border:2px dashed var(--line);border-radius:10px;display:grid;place-items:center;text-align:center;padding:12px;cursor:pointer;color:var(--muted);font-weight:600;font-size:14px;aspect-ratio:4/3;max-width:100%}
+.drop:hover{border-color:var(--brand);color:var(--brand)}
+.logo-edit{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.logo-edit .badge-logo{animation:none;width:110px}
+.savebar{position:fixed;left:0;right:0;bottom:0;z-index:16;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.savebar .wrap{display:flex;gap:10px;align-items:center;justify-content:flex-end;padding-block:12px;flex-wrap:wrap}
+.savebar .note{margin-right:auto;font-size:14px;color:var(--muted)}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:12px;font-weight:600;z-index:70;box-shadow:var(--shadow);max-width:calc(100% - 32px)}
+.confirm{display:flex;gap:8px;align-items:center;flex-wrap:wrap;background:color-mix(in srgb,var(--danger) 10%,transparent);padding:8px 10px;border-radius:10px;font-size:14px}
+
+@media (max-width:900px){
+  .stage-in{grid-template-columns:1fr}
+  .hero-side{justify-items:start}
+  .dots{justify-content:flex-start}
+  .badge-logo.in-hero{position:absolute;top:18px;right:18px;width:92px}
+  .detail,.custom-layout{grid-template-columns:1fr}
+  .aside{position:static}
+  .custom-band{grid-template-columns:1fr}
+  .lists{grid-template-columns:1fr}
+  .d-hero{aspect-ratio:4/3}
+}
+@media (max-width:560px){
+  .aitem{grid-template-columns:72px minmax(0,1fr)}
+  .aitem img{width:72px;height:54px}
+  .aitem .acts{grid-column:1/-1;justify-content:flex-start}
+  .nav{margin-left:0;width:100%}
+  .nav a{padding:6px 10px;font-size:14px}
+  .search{width:100%}
+  .lb-btn{width:42px;height:42px;top:auto;bottom:10px;transform:none}
+  .stage-in{padding-top:120px}
+  .grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.slide{transform:none}}
+</style>
+<div id="app"></div>
+<script id="state" type="application/json">{"v": 2, "config": {"nome": "Lunas Tour", "subtitulo": "Agência de viagens", "slogan": "É preciso viver, e a Lunas Tour leva você!", "apresentacao": "Excursões de ônibus com hotel, roteiro, poltrona marcada e parcelamento facilitado. Atendimento direto pelo WhatsApp.", "cidade": "", "whatsapp": "", "instagram": "", "sobre": "", "embarque": "Praça da Matriz, em frente à igreja", "faq": [{"p": "Como faço para reservar?", "r": "Escolha a excursão, preencha seu nome e quantas pessoas vão e toque em “Enviar pelo WhatsApp”. A reserva é confirmada depois do pagamento da entrada ou do PIX."}, {"p": "Quais são as formas de pagamento?", "r": "PIX à vista com desconto, ou parcelado conforme cada excursão. As parcelas precisam estar quitadas até a data da viagem."}, {"p": "Posso escolher a poltrona?", "r": "Sim. Na página da excursão, toque nas poltronas livres no mapa do ônibus. A escolha segue na mensagem e é confirmada pela organizadora."}, {"p": "Criança precisa de documento?", "r": "Sim. Crianças viajam com certidão de nascimento ou RG. Menores sem os pais precisam de autorização com firma reconhecida."}, {"p": "E se eu precisar desistir?", "r": "Avise o quanto antes pelo WhatsApp. As regras de reembolso ou troca de passageiro variam conforme a excursão e são informadas no momento da reserva."}]}, "admin": {"login": "apresentacao", "salt": "x", "hash": "x"}, "excursoes": [{"exemplo": true, "destaque": false, "status": "aberta", "transporte": "Ônibus executivo", "hotel": {"nome": "", "estrelas": 0, "quarto": "", "descricao": "", "comodidades": [], "imagens": []}, "obs": "Leve documento com foto.", "naoInclui": "Refeições\nBondinho do Morro do Cruzeiro", "id": "ex-aparecida", "titulo": "Bate-volta Aparecida", "destino": "Aparecida - SP", "categoria": "Religiosa", "resumo": "Missa no Santuário Nacional, Basílica Velha, Passarela da Fé e tempo livre para compras.", "descricao": "Um dia de fé no maior santuário mariano do mundo. Missa na Basílica, visita à Basílica Velha, Passarela da Fé e o Morro do Cruzeiro.\n\nSaímos de madrugada para chegar a tempo da missa das 9h.", "imagens": [{"url": "fotos/aparecida1.jpg", "credito": "Mike Peel · CC BY-SA 4.0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Basilica_of_the_National_Shrine_of_Our_Lady_of_Aparecida_2019_46.jpg"}], "ida": {"data": "2026-12-13", "hora": "03:30", "local": "Praça da Matriz, em frente à igreja"}, "volta": {"data": "2026-12-13", "hora": "22:00", "local": "Praça da Matriz, em frente à igreja"}, "roteiro": "03:30 - Saída da praça\n09:00 - Missa no Santuário Nacional\n11:00 - Passarela da Fé e Basílica Velha\n13:00 - Almoço livre\n14:30 - Morro do Cruzeiro e compras\n17:00 - Retorno", "inclui": "Transporte ida e volta\nSeguro viagem\nGuia acompanhante", "valores": {"adulto": 189, "crianca": 150, "criancaIdade": "5 a 10 anos", "pixDesconto": 5, "entrada": 0, "parcelas": 3, "semJuros": 3, "juros": 0, "obs": "Crianças até 4 anos no colo não pagam."}, "vagas": {"total": 46}, "ocupadas": [2, 3, 4, 5, 6, 7, 8, 10, 13, 14, 18, 19, 20, 21, 22, 24, 25, 26, 28, 29, 30, 31, 33, 34, 35, 37, 38, 40, 42, 43, 46]}, {"exemplo": true, "destaque": true, "status": "aberta", "transporte": "Ônibus leito turismo", "hotel": {"nome": "Hotel 3★ no centro de Gramado", "estrelas": 3, "quarto": "Duplo, triplo ou quádruplo", "descricao": "A 400 m da Rua Coberta, com café da manhã colonial e aquecimento nos quartos.", "comodidades": ["Café colonial", "Wi-Fi", "Aquecedor", "Estacionamento para o ônibus"], "imagens": [{"url": "fotos/hotel1.jpg", "credito": "Kurt Kaiser · CC0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Bed_in_hotel_room_2.jpg"}]}, "obs": "Leve agasalho: à noite a temperatura pode ficar abaixo de 12 °C.", "naoInclui": "Almoços e jantares\nIngressos de parques e shows do Natal Luz", "id": "ex-gramado", "titulo": "Natal Luz em Gramado e Canela", "destino": "Gramado - RS", "categoria": "Natal", "resumo": "5 dias na Serra Gaúcha com Rua Coberta, Lago Negro, Catedral de Pedra e a decoração do Natal Luz.", "descricao": "A Serra Gaúcha no clima de Natal: ruas iluminadas, chocolate quente e o charme europeu de Gramado e Canela.\n\nHotel no centro, a poucos passos da Rua Coberta. Passeios com guia local e noites livres para curtir a programação de Natal.", "imagens": [{"url": "fotos/gramado1.jpg", "credito": "Leandro Neumann Ciuffo · CC BY 2.0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Rua_Coberta_(4654764634).jpg"}, {"url": "fotos/gramado2.jpg", "credito": "Aline Victor · CC BY-SA 4.0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Lago_Negro_-_Gramado_-_RS_02.jpg"}, {"url": "fotos/gramado3.jpg", "credito": "Rosanetur · CC BY 2.0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Catedral_de_Pedra,_Canela_RS.jpg"}], "ida": {"data": "2026-12-02", "hora": "18:00", "local": "Praça da Matriz, em frente à igreja"}, "volta": {"data": "2026-12-07", "hora": "08:00", "local": "Praça da Matriz, em frente à igreja"}, "roteiro": "Dia 1: Saída às 18h\nDia 2: Chegada, check-in e noite livre na Rua Coberta\nDia 3: City tour Gramado (Lago Negro, Rua Torta, Mini Mundo)\nDia 4: Canela (Catedral de Pedra e Parque do Caracol)\nDia 5: Manhã livre e retorno às 14h\nDia 6: Chegada pela manhã", "inclui": "Transporte ida e volta\n3 diárias com café da manhã\nCity tour Gramado e Canela com guia\nSeguro viagem", "valores": {"adulto": 1890, "crianca": 1290, "criancaIdade": "6 a 11 anos", "pixDesconto": 5, "entrada": 300, "parcelas": 10, "semJuros": 6, "juros": 1.99, "obs": "Valor por pessoa em quarto duplo."}, "vagas": {"total": 44}, "ocupadas": [2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33, 34, 35, 36, 37, 38, 41, 43, 44]}, {"exemplo": true, "destaque": false, "status": "aberta", "transporte": "Ônibus leito", "hotel": {"nome": "Hotel 3★ em Copacabana", "estrelas": 3, "quarto": "Duplo ou triplo", "descricao": "A 3 quadras da praia, com café da manhã e ar-condicionado.", "comodidades": ["Café da manhã", "Ar-condicionado", "Wi-Fi", "Perto da praia"], "imagens": [{"url": "fotos/hotel1.jpg", "credito": "Kurt Kaiser · CC0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Bed_in_hotel_room_2.jpg"}]}, "obs": "", "naoInclui": "Ingressos do Cristo e do bondinho\nCeia de Réveillon", "id": "ex-rio", "titulo": "Réveillon no Rio de Janeiro", "destino": "Rio de Janeiro - RJ", "categoria": "Réveillon", "resumo": "Virada do ano na praia de Copacabana, Cristo Redentor e Pão de Açúcar.", "descricao": "Comece 2027 na festa de Réveillon mais famosa do Brasil. Hotel a 3 quadras da orla de Copacabana e passeios pelos cartões-postais da cidade.", "imagens": [{"url": "fotos/rio1.jpg", "credito": "Wilfredor · CC0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Rio_skyline_and_Cristo_Redentor_from_Sugarloaf_Mountain,_Brazil.jpg"}, {"url": "fotos/rio2.jpg", "credito": "Wilfredor · CC0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Ipanema_and_Leblon_as_seen_from_Morro_Dois_Irm%C3%A3os,_with_Lagoa_and_Cantagalo_in_the_background,_Rio_de_Janeiro,_Brazil.jpg"}], "ida": {"data": "2026-12-29", "hora": "22:00", "local": "Praça da Matriz, em frente à igreja"}, "volta": {"data": "2027-01-02", "hora": "10:00", "local": "Praça da Matriz, em frente à igreja"}, "roteiro": "Dia 1: Saída às 22h\nDia 2: Chegada, check-in e praia\nDia 3: Cristo Redentor e Pão de Açúcar\nDia 4: Dia livre e Réveillon na orla de Copacabana\nDia 5: Retorno às 10h", "inclui": "Transporte ida e volta\n3 diárias com café da manhã\nCity tour com guia\nSeguro viagem", "valores": {"adulto": 1490, "crianca": 1090, "criancaIdade": "5 a 11 anos", "pixDesconto": 5, "entrada": 250, "parcelas": 10, "semJuros": 5, "juros": 1.99, "obs": "Valor por pessoa em quarto duplo."}, "vagas": {"total": 46}, "ocupadas": [3, 5, 8, 10, 11, 12, 16, 19, 20, 21, 22, 23, 27, 29, 32, 33, 39, 40, 43, 44]}, {"exemplo": true, "destaque": false, "status": "aberta", "transporte": "Ônibus leito", "hotel": {"nome": "Pousada com piscina em Penha", "estrelas": 3, "quarto": "Duplo, triplo ou quádruplo", "descricao": "Pousada familiar a 5 minutos do parque, com piscina e café da manhã.", "comodidades": ["Café da manhã", "Piscina", "Wi-Fi", "Ar-condicionado"], "imagens": [{"url": "fotos/hotel1.jpg", "credito": "Kurt Kaiser · CC0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Bed_in_hotel_room_2.jpg"}]}, "obs": "", "naoInclui": "Refeições no parque", "id": "ex-beto", "titulo": "Beto Carrero World", "destino": "Penha - SC", "categoria": "Parque", "resumo": "Dois dias de parque com ingresso incluso e hotel na praia de Penha.", "descricao": "O maior parque temático da América Latina, com montanhas-russas, shows e área infantil. Hotel com piscina a 5 minutos do parque.", "imagens": [{"url": "fotos/beto1.jpg", "credito": "HVL · CC BY 4.0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Vila_Germ%C3%A2nica_no_Beto_Carrero_World,_Penha_SC.JPG"}, {"url": "fotos/beto2.jpg", "credito": "Nivaldo Cit filho · CC BY-SA 3.0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:BETO_CARRERO_WORLD,_Penha,_Santa_Catarina,_Brasil_by_Nivaldo_Cit_Filho_-_panoramio.jpg"}], "ida": {"data": "2027-01-21", "hora": "19:00", "local": "Praça da Matriz, em frente à igreja"}, "volta": {"data": "2027-01-25", "hora": "07:00", "local": "Praça da Matriz, em frente à igreja"}, "roteiro": "Dia 1: Saída às 19h\nDia 2: Chegada e primeiro dia de parque\nDia 3: Segundo dia de parque\nDia 4: Praia de Penha pela manhã e retorno às 14h\nDia 5: Chegada pela manhã", "inclui": "Transporte ida e volta\n2 diárias com café da manhã\nPassaporte de 2 dias no parque\nSeguro viagem", "valores": {"adulto": 1290, "crianca": 990, "criancaIdade": "até 12 anos", "pixDesconto": 5, "entrada": 200, "parcelas": 10, "semJuros": 10, "juros": 0, "obs": "Ingresso do parque incluso no valor."}, "vagas": {"total": 46}, "ocupadas": [4, 5, 6, 18, 19, 20, 23, 25, 29, 30, 31, 37, 38, 44]}, {"exemplo": true, "destaque": false, "status": "aberta", "transporte": "Ônibus leito", "hotel": {"nome": "Hotel 4★ na orla de Taperapuã", "estrelas": 4, "quarto": "Duplo ou triplo", "descricao": "Pé na areia, piscina com bar e meia pensão (café da manhã e jantar).", "comodidades": ["Meia pensão", "Piscina", "Ar-condicionado", "Frente para o mar", "Wi-Fi"], "imagens": [{"url": "fotos/hotel1.jpg", "credito": "Kurt Kaiser · CC0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Bed_in_hotel_room_2.jpg"}]}, "obs": "", "naoInclui": "Almoços\nTaxa do barco no Recife de Fora", "id": "ex-porto", "titulo": "Porto Seguro 7 noites", "destino": "Porto Seguro - BA", "categoria": "Pacote", "resumo": "Uma semana de praia com meia pensão, Arraial d'Ajuda e Trancoso.", "descricao": "Pacote completo para descansar: hotel na orla de Taperapuã, meia pensão e passeios inclusos para Arraial d'Ajuda e Trancoso.", "imagens": [{"url": "fotos/porto2.jpg", "credito": "HVL · CC BY 3.0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Vista_da_Praia_dos_Coqueiros_em_Trancoso,_Porto_Seguro_BA.JPG"}, {"url": "fotos/porto1.jpg", "credito": "Apsc777 · CC BY-SA 4.0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Porto_Seguro_na_Bahia,_vista_da_praia,.jpg"}], "ida": {"data": "2027-03-12", "hora": "18:00", "local": "Praça da Matriz, em frente à igreja"}, "volta": {"data": "2027-03-21", "hora": "08:00", "local": "Praça da Matriz, em frente à igreja"}, "roteiro": "Dia 1: Saída às 18h\nDia 2: Chegada e check-in\nDia 3: Praia de Taperapuã\nDia 4: Arraial d'Ajuda\nDia 5: Trancoso e Quadrado\nDia 6: Recife de Fora (barco)\nDias 7 e 8: Livres\nDia 9: Retorno", "inclui": "Transporte ida e volta\n7 diárias com meia pensão\n3 passeios guiados\nSeguro viagem", "valores": {"adulto": 2690, "crianca": 1890, "criancaIdade": "3 a 10 anos", "pixDesconto": 7, "entrada": 400, "parcelas": 12, "semJuros": 10, "juros": 1.89, "obs": "Valor por pessoa em quarto duplo."}, "vagas": {"total": 44}, "ocupadas": [2, 4, 8, 11, 14, 23, 30, 32, 40]}, {"exemplo": true, "destaque": false, "status": "aberta", "transporte": "Ônibus leito", "hotel": {"nome": "Hotel 3★ no centro de Foz", "estrelas": 3, "quarto": "Duplo ou triplo", "descricao": "Hotel com piscina e café da manhã, perto da avenida principal.", "comodidades": ["Café da manhã", "Piscina", "Wi-Fi", "Ar-condicionado"], "imagens": [{"url": "fotos/hotel1.jpg", "credito": "Kurt Kaiser · CC0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Bed_in_hotel_room_2.jpg"}]}, "obs": "", "naoInclui": "Ingressos dos parques\nAlmoços e jantares", "id": "ex-foz", "titulo": "Foz do Iguaçu no feriado de Tiradentes", "destino": "Foz do Iguaçu - PR", "categoria": "Feriado", "resumo": "Cataratas do lado brasileiro e argentino, Garganta do Diabo e compras no Paraguai.", "descricao": "Uma das sete maravilhas da natureza. Visitamos as Cataratas pelos dois lados, com a passarela da Garganta do Diabo, Itaipu e um dia de compras em Ciudad del Este.", "imagens": [{"url": "fotos/foz1.jpg", "credito": "Pribruder · CC0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Cataratas_do_Igua%C3%A7u_(2022).jpg"}, {"url": "fotos/foz2.jpg", "credito": "MTur Destinos · Public domain · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Zig_Koch_Garganta_do_Diabo_no_mirante_argentino_Parque_Nacional_Igua%C3%A7u_Foz_do_Igua%C3%A7u_PR_(40667654215).jpg"}], "ida": {"data": "2027-04-16", "hora": "20:00", "local": "Praça da Matriz, em frente à igreja"}, "volta": {"data": "2027-04-21", "hora": "20:00", "local": "Praça da Matriz, em frente à igreja"}, "roteiro": "Dia 1: Saída às 20h\nDia 2: Chegada e Cataratas (lado brasileiro)\nDia 3: Cataratas (lado argentino) e Garganta do Diabo\nDia 4: Itaipu e compras no Paraguai\nDia 5: Marco das Três Fronteiras e retorno", "inclui": "Transporte ida e volta\n3 diárias com café da manhã\nGuia local\nSeguro viagem", "valores": {"adulto": 1590, "crianca": 1150, "criancaIdade": "5 a 11 anos", "pixDesconto": 5, "entrada": 250, "parcelas": 10, "semJuros": 8, "juros": 1.99, "obs": "Leve RG original ou passaporte para entrar na Argentina e no Paraguai."}, "vagas": {"total": 46}, "ocupadas": [6, 9, 11, 16, 18, 19, 26, 29, 32, 36, 42, 43]}, {"exemplo": true, "destaque": false, "status": "aberta", "transporte": "Ônibus executivo", "hotel": {"nome": "Pousada 3★ no Capivari", "estrelas": 3, "quarto": "Duplo, triplo ou quádruplo", "descricao": "Pousada aconchegante com lareira e café colonial, a 600 m do Capivari.", "comodidades": ["Café colonial", "Lareira", "Aquecedor", "Wi-Fi"], "imagens": [{"url": "fotos/hotel1.jpg", "credito": "Kurt Kaiser · CC0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Bed_in_hotel_room_2.jpg"}]}, "obs": "", "naoInclui": "Almoços e jantares\nIngressos de concertos", "id": "ex-campos", "titulo": "Festival de Inverno em Campos do Jordão", "destino": "Campos do Jordão - SP", "categoria": "Fim de semana", "resumo": "Duas noites na serra com fondue, Capivari e a programação do Festival de Inverno.", "descricao": "Clima de montanha em plena temporada de inverno. Pousada a 600 m do Capivari, com café colonial, city tour e noite livre para o fondue.", "imagens": [{"url": "fotos/campos1.jpg", "credito": "Governo do Estado de São Paulo · CC BY 2.0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Vista_%C3%A1rea_da_Vila_Capivari,_Campos_do_Jord%C3%A3o.jpg"}, {"url": "fotos/campos2.jpg", "credito": "Bruna da Silva Rodrigues · CC BY-SA 4.0 · Wikimedia Commons", "fonte": "https://commons.wikimedia.org/wiki/File:Campos_do_jord%C3%A3o_02.jpg"}], "ida": {"data": "2027-07-09", "hora": "22:00", "local": "Praça da Matriz, em frente à igreja"}, "volta": {"data": "2027-07-11", "hora": "21:30", "local": "Praça da Matriz, em frente à igreja"}, "roteiro": "Sexta: Saída às 22h\nSábado: Chegada, café, city tour e noite livre no Capivari\nDomingo: Manhã livre, fábrica de chocolate e retorno às 14h", "inclui": "Transporte ida e volta\n2 diárias com café da manhã\nCity tour com guia local\nSeguro viagem", "valores": {"adulto": 890, "crianca": 620, "criancaIdade": "6 a 11 anos", "pixDesconto": 5, "entrada": 150, "parcelas": 8, "semJuros": 6, "juros": 1.99, "obs": "Valor por pessoa em quarto duplo."}, "vagas": {"total": 46}, "ocupadas": [9, 18, 28, 36]}]}</script>
+<script id="app-js">
+(function(){
+"use strict";
+var HEAD_BITS='<title>Lunas Tour</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Cinzel:wght@600;700&family=Caveat:wght@600;700&display=swap">\n';
+var SCRIPT_END='<'+'/script>';
+var S=JSON.parse(document.getElementById('state').textContent);
+var app=document.getElementById('app');
+var ui={filter:'todas',q:'',tab:'excursoes',draft:null,img:0,confirm:null,saving:false,err:'',seats:[],flip:null,uploading:null};
+var caps={artifact:null,assets:null,user:null,canEdit:null};
+var timers=[];
+var DEMO=true;
+var RM=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+function h(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function ss(k,v){try{if(v===undefined)return sessionStorage.getItem(k);if(v===null)sessionStorage.removeItem(k);else sessionStorage.setItem(k,v)}catch(e){return null}}
+var BRL=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'});
+function money(n){return BRL.format(Number(n)||0)}
+function numIn(v){if(v===''||v==null)return 0;var s=String(v);if(s.indexOf(',')>=0)s=s.replace(/\./g,'').replace(',','.');var n=parseFloat(s);return isFinite(n)?n:0}
+function pd(d){if(!d)return null;var p=d.split('-');return new Date(Date.UTC(+p[0],+p[1]-1,+p[2]))}
+var fmtLong=new Intl.DateTimeFormat('pt-BR',{weekday:'short',day:'2-digit',month:'short',year:'numeric',timeZone:'UTC'});
+var fmtDM=new Intl.DateTimeFormat('pt-BR',{day:'2-digit',month:'2-digit',timeZone:'UTC'});
+var fmtWk=new Intl.DateTimeFormat('pt-BR',{weekday:'short',timeZone:'UTC'});
+function dLong(d){var x=pd(d);return x?fmtLong.format(x).replace(/\./g,''):'—'}
+function dDM(d){var x=pd(d);return x?fmtDM.format(x):'--/--'}
+function dWk(d){var x=pd(d);return x?fmtWk.format(x).replace('.',''):''}
+function nights(e){var a=pd(e.ida.data),b=pd(e.volta.data);if(!a||!b)return 0;return Math.max(0,Math.round((b-a)/864e5))}
+function durLabel(e){var n=nights(e);return n===0?'Bate-volta':(n+1)+' dias'}
+function todayStr(){var t=new Date();return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0')}
+function daysTo(e){var a=pd(e.ida.data),t=pd(todayStr());if(!a)return null;return Math.round((a-t)/864e5)}
+function countLabel(e){var d=daysTo(e);if(d==null||d<0)return '';if(d===0)return 'Sai hoje!';if(d===1)return 'Sai amanhã';return 'Faltam '+d+' dias'}
+function uid(){return 'ex-'+Math.random().toString(36).slice(2,8)+Date.now().toString(36).slice(-3)}
+function lines(t){return String(t||'').split('\n').map(function(s){return s.trim()}).filter(Boolean)}
+function waNumber(){var d=String(S.config.whatsapp||'').replace(/\D/g,'');if(!d)return '';if(d.length<=11)d='55'+d;return d}
+function waLink(msg){var n=waNumber();return n?'https://wa.me/'+n+'?text='+encodeURIComponent(msg):''}
+function waPretty(){var d=String(S.config.whatsapp||'').replace(/\D/g,'');if(d.length===11)return '('+d.slice(0,2)+') '+d.slice(2,7)+'-'+d.slice(7);if(d.length===10)return '('+d.slice(0,2)+') '+d.slice(2,6)+'-'+d.slice(6);return S.config.whatsapp||''}
+function occ(e){return Array.isArray(e.ocupadas)?e.ocupadas:[]}
+function rest(e){if(e.status==='esgotada')return 0;return Math.max(0,(+e.vagas.total||0)-occ(e).length)}
+function clone(o){return JSON.parse(JSON.stringify(o))}
+function clearTimers(){timers.forEach(clearInterval);timers=[]}
+function gv(id){var el=document.getElementById(id);return el?el.value.trim():''}
+
+function installments(v){
+  var base=Math.max(0,(+v.adulto||0)-(+v.entrada||0)),max=Math.max(1,+v.parcelas||1),free=Math.max(1,Math.min(max,+v.semJuros||max)),i=(+v.juros||0)/100,out=[];
+  for(var n=1;n<=max;n++){var f=n<=free||i<=0,pmt=f?base/n:base*i/(1-Math.pow(1+i,-n));out.push({n:n,pmt:pmt,total:pmt*n,free:f})}
+  return out;
+}
+function bestInst(e){var list=installments(e.valores);return {max:list[list.length-1],free:list.filter(function(x){return x.free}).pop(),entrada:+e.valores.entrada||0}}
+
+/* Brand mark: a vector redraw of the Lunas Tour seal. The uploaded logo replaces it when present. */
+function logoSvg(full){
+  return '<svg viewBox="0 0 200 200" role="img" aria-label="Lunas Tour"><defs><linearGradient id="lt-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BDEBFF"/><stop offset=".6" stop-color="#EAF9FF"/><stop offset=".61" stop-color="#2CC7EC"/><stop offset="1" stop-color="#0A86C4"/></linearGradient><linearGradient id="lt-ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#43D6F5"/><stop offset="1" stop-color="#0A6FB8"/></linearGradient></defs>'+
+  '<circle cx="100" cy="100" r="99" fill="#0B2236"/><circle cx="100" cy="100" r="92" fill="url(#lt-sky)" stroke="url(#lt-ring)" stroke-width="7"/>'+
+  '<path d="M18 124 Q60 114 100 122 T182 118 L182 130 Q140 138 100 130 T18 134Z" fill="#7FE1F7" opacity=".8"/>'+
+  '<path d="M62 126 C64 98 68 74 80 50" stroke="#0B2236" stroke-width="5" fill="none" stroke-linecap="round"/>'+
+  '<g fill="#0B2236"><path d="M80 50 C68 38 50 40 40 50 C54 46 66 48 80 52Z"/><path d="M80 50 C84 34 98 28 112 32 C98 36 90 42 81 52Z"/><path d="M80 50 C94 44 110 50 116 62 C104 54 94 52 81 53Z"/><path d="M80 50 C68 52 58 62 56 76 C64 64 72 58 81 53Z"/><path d="M80 50 C76 36 64 28 52 28 C64 34 72 42 79 52Z"/></g>'+
+  '<path d="M120 40 a13 13 0 1 0 10 22 a10 10 0 1 1 -10 -22z" fill="#0B2236"/>'+
+  '<path d="M134 54 q4 -4 8 0 q4 -4 8 0 M142 66 q3 -3 6 0 q3 -3 6 0" stroke="#0B2236" stroke-width="1.8" fill="none"/>'+
+  '<path d="M126 104 Q146 76 168 100 Z" fill="#2CC7EC" stroke="#0B2236" stroke-width="2.2"/><path d="M147 90 L141 126" stroke="#0B2236" stroke-width="2.4"/>'+
+  '<path d="M146 30 l20 -8 l3 3 l-15 9 l3 11 l-3 1 l-6 -10 l-9 5 l-1 4 l-2 1 l0 -6 l-4 -4 l2 -1 l4 2 l9 -5z" fill="#0B2236"/>'+
+  (full===false?'':'<text x="100" y="157" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="700" font-size="34" fill="#0B2236" letter-spacing="1">LUNAS</text>'+
+  '<text x="100" y="172" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="700" font-size="11" fill="#0B2236" letter-spacing="5">TOUR</text>'+
+  '<text x="100" y="184" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="700" font-size="6.6" fill="#0B2236" letter-spacing="1.6">AGÊNCIA DE VIAGENS</text>')+
+  '</svg>';
+}
+function logoMark(full){var l=S.config.logo;return l&&l.url?'<img src="'+h(l.url)+'" alt="'+h(S.config.nome)+'">':logoSvg(full)}
+function imgSrc(im){return im&&im.url?im.url:''}
+function cover(e){return imgSrc(e.imagens&&e.imagens[0])}
+function credit(im){return im&&im.credito?'Foto: '+im.credito:''}
+
+var ICON={
+  bus:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="3"/><path d="M3 11h18M7 17v2M17 17v2"/><circle cx="7.5" cy="14" r=".8" fill="currentColor"/><circle cx="16.5" cy="14" r=".8" fill="currentColor"/></svg>',
+  plane:'<svg width="42" height="42" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" transform="rotate(90 12 12)"/></svg>',
+  wa:'<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3Z"/></svg>',
+  check:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--ok)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>',
+  x:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--danger)" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+  back:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>',
+  lock:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>',
+  pin:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="vertical-align:-2px"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>'
+};
+
+function publicList(){return S.excursoes.filter(function(e){return e.status==='aberta'||e.status==='esgotada'}).sort(function(a,b){return (a.ida.data||'').localeCompare(b.ida.data||'')})}
+function findEx(r){return S.excursoes.filter(function(e){return e.id===r})[0]}
+
+function route(){return (location.hash||'').replace(/^#/,'')}
+window.addEventListener('hashchange',function(){
+  ui.img=0;ui.confirm=null;ui.err='';ui.seats=[];
+  var r=route();if(r!=='excursoes'&&r!=='contato'&&r!=='duvidas')window.scrollTo(0,0);
+  render();
+});
+
+/* ---------- public ---------- */
+function header(){
+  var c=S.config;
+  return '<header class="top"><div class="wrap"><a class="logo" href="#"><span class="logo-mark">'+logoMark(false)+'</span><span class="logo-txt"><b>'+h(c.nome||'Excursões')+'</b><span>'+h(c.subtitulo||'Agência de viagens')+'</span></span></a>'+
+    '<nav class="nav" aria-label="Principal"><a href="#excursoes">Excursões</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a><a class="cta" href="#personalizada">Excursão personalizada</a></nav></div></header>';
+}
+function allCredits(){
+  var seen={},out=[];
+  S.excursoes.forEach(function(e){(e.imagens||[]).concat((e.hotel&&e.hotel.imagens)||[]).forEach(function(im){if(im&&im.credito&&!seen[im.url]){seen[im.url]=1;out.push(im)}})});
+  return out;
+}
+function footer(){
+  var c=S.config,cr=allCredits(),ig=String(c.instagram||'').replace(/^@/,'');
+  return '<footer id="contato"><div class="wrap"><div style="display:grid;gap:6px"><div class="logo"><span class="logo-mark">'+logoMark(false)+'</span><span class="logo-txt"><b style="color:var(--ink)">'+h(c.nome)+'</b><span>'+h(c.subtitulo||'')+'</span></span></div>'+
+    '<span class="hand" style="font-size:22px;color:var(--brand)">'+h(c.slogan)+'</span>'+
+    (c.cidade?'<span>Saídas de '+h(c.cidade)+'</span>':'')+
+    (waNumber()?'<span>WhatsApp: <span class="mono" style="user-select:all">'+h(waPretty())+'</span></span>':'')+
+    (ig?'<span>Instagram: <a href="https://instagram.com/'+h(ig)+'" target="_blank" rel="noopener">@'+h(ig)+'</a></span>':'')+
+    '</div><div style="display:grid;gap:8px;justify-items:end;text-align:right"><a href="#admin">'+ICON.lock+' Área da organizadora</a><span>Valores sujeitos a disponibilidade de vagas.</span>'+
+    (cr.length?'<details class="credits more" style="text-align:left"><summary>Créditos das fotos</summary><ul>'+cr.map(function(im){return '<li>'+(im.fonte?'<a href="'+h(im.fonte)+'" target="_blank" rel="noopener">'+h(im.credito)+'</a>':h(im.credito))+'</li>'}).join('')+'</ul></details>':'')+
+    '</div></div></footer>'+
+    (waNumber()?'<a class="fab" href="'+h(waLink('Olá! Vim pelo site da '+c.nome+' e gostaria de informações.'))+'" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">'+ICON.wa.replace('width="18" height="18"','width="28" height="28"')+'</a>':'');
+}
+function stubFor(e){return '<div class="when"><b>IDA</b> '+dWk(e.ida.data)+' '+dDM(e.ida.data)+' · '+h(e.ida.hora||'--:--')+'<br><b>VOLTA</b> '+dWk(e.volta.data)+' '+dDM(e.volta.data)+' · '+h(e.volta.hora||'--:--')+'</div>'}
+function card(e){
+  var b=bestInst(e),badges='',r=rest(e);
+  if(e.status==='esgotada')badges+='<span class="badge off">Esgotada</span>';
+  else if(r>0&&r<=8)badges+='<span class="badge hot">Últimas '+r+' vagas</span>';
+  if(e.destaque)badges+='<span class="badge hot">Destaque</span>';
+  badges+='<span class="badge">'+h(e.categoria||durLabel(e))+'</span>';
+  if(e.exemplo)badges+='<span class="badge ex">Exemplo</span>';
+  var instTxt=b.max.n>1?(b.entrada?'entrada + ':'')+b.free.n+'x de '+money(b.free.pmt)+' sem juros':'à vista';
+  var cl=countLabel(e);
+  return '<a class="card reveal" href="#'+h(e.id)+'" data-card="'+h(e.id)+'"><div class="card-img"><img src="'+h(cover(e))+'" alt="'+h(e.destino)+'" loading="lazy"><div class="badges">'+badges+'</div>'+(cl?'<span class="count-tag">'+cl+'</span>':'')+'</div>'+
+    '<div class="card-body"><h3>'+h(e.titulo)+'</h3><div class="dest">'+ICON.pin+' '+h(e.destino)+' · '+durLabel(e)+'</div>'+(e.resumo?'<p style="font-size:15px">'+h(e.resumo)+'</p>':'')+'</div>'+
+    '<div class="card-stub">'+stubFor(e)+'<div class="price"><small>por pessoa</small><b>'+money(e.valores.adulto)+'</b><span>'+h(instTxt)+'</span></div></div></a>';
+}
+function viewHome(){
+  var list=publicList(),c=S.config;
+  var open=list.filter(function(e){return e.status==='aberta'&&(e.ida.data||'')>=todayStr()});
+  var next=open[0]||list[0];
+  var slides=list.filter(function(e){return cover(e)}).slice(0,7);
+  var q=ui.q.trim().toLowerCase();
+  var shown=list.filter(function(e){
+    if(ui.filter==='bate'&&nights(e)!==0)return false;
+    if(ui.filter==='fds'&&!(nights(e)>=1&&nights(e)<=3))return false;
+    if(ui.filter==='pacote'&&nights(e)<4)return false;
+    if(q&&(e.titulo+' '+e.destino+' '+(e.categoria||'')).toLowerCase().indexOf(q)<0)return false;
+    return true;
+  });
+  var pass=next?'<a href="#'+h(next.id)+'" data-card="'+h(next.id)+'" class="pass hero-pass rise d3" style="text-decoration:none;display:block"><div class="pass-head"><span class="eyebrow">Próxima saída</span><span class="mono" style="font-weight:600;font-size:13px">'+h(countLabel(next)||next.transporte)+'</span></div>'+
+      '<div class="pass-body"><div class="route"><div class="pt"><b>'+h(c.cidade||'Embarque')+'</b><span>'+h(next.ida.local||c.embarque||'')+'</span></div><div class="bus">'+ICON.bus+'</div><div class="pt"><b>'+h(next.destino.split(' - ')[0])+'</b><span>'+h(durLabel(next))+'</span></div></div>'+
+      '<div class="perf"></div><div class="stub"><div><small>Embarque</small><b>'+dDM(next.ida.data)+' '+h(next.ida.hora)+'</b></div><div><small>Retorno</small><b>'+dDM(next.volta.data)+'</b></div><div><small>Vagas</small><b>'+rest(next)+'/'+h(next.vagas.total)+'</b></div></div></div></a>':'';
+  var chips=[['todas','Todas'],['bate','Bate-volta'],['fds','Fim de semana'],['pacote','Pacotes']].map(function(x){return '<button class="chip" data-filter="'+x[0]+'" aria-pressed="'+(ui.filter===x[0])+'">'+x[1]+'</button>'}).join('');
+  var dest=list.map(function(e){return e.destino.split(' - ')[0]});
+  var mqRow=dest.concat(dest).map(function(d){return h(d)+'<i></i>'}).join('');
+  var mq=dest.length?'<div class="marquee" aria-hidden="true"><div class="marquee-in"><span>'+mqRow+'</span><span>'+mqRow+'</span></div></div>':'';
+  var faq=(c.faq||[]).filter(function(f){return f.p});
+  return header()+'<main>'+
+    '<div class="wrap hero"><div class="stage" id="stage">'+
+      slides.map(function(e,i){return '<div class="slide'+(i===0?' on':'')+'"><img src="'+h(cover(e))+'" alt=""'+(i>1?' loading="lazy"':'')+'></div>'}).join('')+
+      '<div class="plane" aria-hidden="true">'+ICON.plane+'</div>'+
+      '<div class="stage-in"><div class="hero-copy"><span class="chip-ph rise">'+ICON.pin+' '+h(c.cidade?'Excursões saindo de '+c.cidade:'Excursões em grupo com hotel e roteiro')+'</span>'+
+        '<h1 class="rise d1">É preciso viver,</h1><div class="hand rise d2">e a '+h(c.nome)+' leva você!</div>'+
+        (c.apresentacao?'<p class="lead rise d3">'+h(c.apresentacao)+'</p>':'')+
+        '<div class="hero-actions rise d4"><a class="btn btn-accent" href="#excursoes">Ver excursões</a><a class="btn btn-glass" href="#personalizada">Montar excursão personalizada</a></div></div>'+
+      '<div class="hero-side"><div class="badge-logo in-hero">'+logoMark(true)+'</div><div class="side-low">'+pass+
+        (slides.length>1?'<div class="dots">'+slides.map(function(e,i){return '<button class="dot'+(i===0?' on':'')+'" data-dot="'+i+'">'+h(e.destino.split(' - ')[0])+'</button>'}).join('')+'</div>':'')+'</div></div></div>'+
+    '</div></div>'+mq+
+    '<section class="block" id="lista"><div class="wrap"><div class="sec-head"><div><div class="eyebrow">Saídas confirmadas</div><h2 style="margin-top:6px">Excursões disponíveis</h2></div>'+
+    '<div class="filters">'+chips+'<input class="search" id="busca" type="search" placeholder="Buscar destino" value="'+h(ui.q)+'" aria-label="Buscar destino"></div></div>'+
+    (shown.length?'<div class="grid">'+shown.map(card).join('')+'</div>':
+      '<div class="empty"><h3>'+(list.length?'Nenhuma excursão com esse filtro':'Novas excursões em breve')+'</h3><p class="muted">'+(list.length?'Tente outro filtro ou peça uma excursão personalizada.':'Enquanto isso, conte para onde você quer ir e receba um orçamento.')+'</p><a class="btn btn-accent" href="#personalizada">Pedir excursão personalizada</a></div>')+
+    '</div></section>'+
+    '<section class="block"><div class="wrap"><div class="custom-band reveal"><div><div class="eyebrow" style="color:inherit;opacity:.75">Família, igreja, escola, empresa, terceira idade</div><h2 style="margin-top:8px">Não achou o destino? Monte sua excursão personalizada.</h2><p>Conte o destino, a data e quantas pessoas vão. O pedido chega pronto no WhatsApp para a '+h(c.nome)+' preparar o orçamento.</p></div><a class="btn btn-accent" href="#personalizada">Pedir orçamento</a></div></div></section>'+
+    (faq.length?'<section class="block" id="duvidas"><div class="wrap"><div class="sec-head"><div><div class="eyebrow">Antes de reservar</div><h2 style="margin-top:6px">Dúvidas frequentes</h2></div></div><div class="faq">'+faq.map(function(f){return '<details class="reveal"><summary>'+h(f.p)+'</summary><p>'+h(f.r)+'</p></details>'}).join('')+'</div></div></section>':'')+
+    (c.sobre?'<section class="block"><div class="wrap"><div class="panel reveal"><div class="eyebrow">Quem organiza</div><p class="prose">'+h(c.sobre)+'</p></div></div></section>':'')+
+    '</main>'+footer();
+}
+function startHero(){
+  var st=document.getElementById('stage');if(!st)return;
+  var slides=[].slice.call(st.querySelectorAll('.slide')),dots=[].slice.call(st.querySelectorAll('.dot')),cur=0;
+  function show(i){
+    cur=(i+slides.length)%slides.length;
+    slides.forEach(function(s,k){s.classList.toggle('on',k===cur);if(k===cur){var im=s.querySelector('img');im.style.animation='none';void im.offsetWidth;im.style.animation=''}});
+    dots.forEach(function(d,k){d.classList.remove('on');if(k===cur){void d.offsetWidth;d.classList.add('on')}});
+  }
+  st._show=function(i){show(i);clearTimers();if(slides.length>1&&!RM)timers.push(setInterval(function(){if(!document.hidden)show(cur+1)},6000))};
+  if(slides.length>1&&!RM)timers.push(setInterval(function(){if(!document.hidden)show(cur+1)},6000));
+  if(!RM)st.addEventListener('pointermove',function(ev){var r=st.getBoundingClientRect();st.style.setProperty('--px',((ev.clientX-r.left)/r.width-.5).toFixed(3));st.style.setProperty('--py',((ev.clientY-r.top)/r.height-.5).toFixed(3))});
+}
+
+/* ---------- detail ---------- */
+function busHtml(e,mode,sel){
+  var total=Math.max(0,+e.vagas.total||0),o=occ(e),rows=Math.ceil(total/4),out='';
+  for(var r=0;r<rows;r++){
+    out+='<div class="bus-row">';
+    [1,2,0,3,4].forEach(function(p){
+      if(!p){out+='<span></span>';return}
+      var n=r*4+p;if(n>total){out+='<span></span>';return}
+      var isO=o.indexOf(n)>=0,isS=sel&&sel.indexOf(n)>=0;
+      out+='<button type="button" class="seat'+(isO?' occ':'')+(isS?' sel':'')+'" data-seat="'+n+'" aria-pressed="'+(mode==='adm'?isO:!!isS)+'" aria-label="Poltrona '+n+(isO?' ocupada':' livre')+'"'+(isO&&mode!=='adm'?' disabled':'')+'>'+n+'</button>';
+    });
+    out+='</div>';
+  }
+  return '<div class="bus-map'+(mode==='adm'?' adm':'')+'"><div class="bus-body"><div class="bus-front"><span>Motorista</span><span>FRENTE</span><span>Porta</span></div>'+out+'</div>'+
+    '<div class="legend"><span><i></i>Livre</span><span><i class="o"></i>Ocupada</span>'+(mode==='adm'?'':'<span><i class="s"></i>Sua escolha</span>')+'</div></div>';
+}
+function viewDetail(e){
+  var imgs=(e.imagens&&e.imagens.length)?e.imagens:[];
+  var cur=imgs[Math.min(ui.img,Math.max(0,imgs.length-1))];
+  var v=e.valores,list=installments(v),b=bestInst(e),r=rest(e),sold=e.status==='esgotada'||r===0;
+  var vagasPct=e.vagas.total?Math.round(100*(e.vagas.total-r)/e.vagas.total):0;
+  var rot=lines(e.roteiro).map(function(l){var m=l.match(/^([^:–-]{1,18}?)\s*[:–-]\s+(.*)$/);return m?'<li><span class="day">'+h(m[1])+'</span><span>'+h(m[2])+'</span></li>':'<li><span class="day">•</span><span>'+h(l)+'</span></li>'}).join('');
+  var ho=e.hotel||{};
+  var hotel=ho.nome?'<div class="panel reveal"><div class="eyebrow">Hospedagem</div><h3>'+h(ho.nome)+' '+(ho.estrelas?'<span class="stars" aria-label="'+ho.estrelas+' estrelas">'+'★'.repeat(ho.estrelas)+'</span>':'')+'</h3>'+
+    (ho.quarto?'<p><b>Acomodação:</b> '+h(ho.quarto)+'</p>':'')+(ho.descricao?'<p class="prose">'+h(ho.descricao)+'</p>':'')+
+    (ho.comodidades&&ho.comodidades.length?'<div class="amen">'+ho.comodidades.map(function(a){return '<span>'+h(a)+'</span>'}).join('')+'</div>':'')+
+    (ho.imagens&&ho.imagens.length?'<div class="hotel-pics">'+ho.imagens.map(function(im,i){return '<button type="button" data-hotelimg="'+i+'" aria-label="Ampliar foto do hotel"><img src="'+h(imgSrc(im))+'" alt="Foto do hotel" loading="lazy"></button>'}).join('')+'</div>':'')+'</div>':'';
+  var inc=lines(e.inclui),ninc=lines(e.naoInclui);
+  var incl=(inc.length||ninc.length)?'<div class="panel lists reveal"><div><h3 style="margin-bottom:10px">Inclui</h3><ul>'+inc.map(function(x){return '<li>'+ICON.check+'<span>'+h(x)+'</span></li>'}).join('')+'</ul></div><div><h3 style="margin-bottom:10px">Não inclui</h3><ul>'+ninc.map(function(x){return '<li>'+ICON.x+'<span>'+h(x)+'</span></li>'}).join('')+'</ul></div></div>':'';
+  var pix=v.pixDesconto?'<span class="pix">PIX à vista: '+money((+v.adulto)*(1-v.pixDesconto/100))+' ('+v.pixDesconto+'% off)</span>':'';
+  var table='<table class="inst"><tbody>'+list.map(function(x){return '<tr class="'+(x.free&&x.n>1?'free':'')+'"><td>'+x.n+'x</td><td>'+money(x.pmt)+(x.free?'':' <span class="muted" style="font-size:12px">(total '+money(x.total)+')</span>')+'</td></tr>'}).join('')+'</tbody></table>';
+  var cl=countLabel(e);
+  return header()+'<main class="wrap"><a class="back" href="#excursoes">'+ICON.back+' Todas as excursões</a>'+
+    '<div class="d-hero" id="dhero" role="button" tabindex="0" aria-label="Abrir fotos em tela cheia"><div class="layer kb"><img src="'+h(imgSrc(cur))+'" alt="'+h(e.titulo)+'"></div>'+
+      '<span class="credit" id="dcredit">'+h(credit(cur))+'</span>'+(imgs.length?'<span class="zoom">Ver '+imgs.length+' foto'+(imgs.length>1?'s':'')+' em tela cheia</span>':'')+
+      '<div class="d-hero-txt"><div class="eyebrow">'+h(e.categoria||durLabel(e))+' · '+durLabel(e)+(nights(e)?' / '+nights(e)+(nights(e)>1?' noites':' noite'):'')+'</div><h1>'+h(e.titulo)+'</h1><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span style="font-size:18px">'+ICON.pin+' '+h(e.destino)+'</span>'+(cl?'<span class="countdown">'+cl+'</span>':'')+(e.exemplo?'<span class="badge ex">Exemplo</span>':'')+'</div></div></div>'+
+    (imgs.length>1?'<div class="thumbs">'+imgs.map(function(im,i){return '<button data-img="'+i+'" aria-current="'+(i===ui.img)+'" aria-label="Foto '+(i+1)+'"><img src="'+h(imgSrc(im))+'" alt=""></button>'}).join('')+'</div>':'')+
+    '<div class="detail"><div class="stack enter">'+
+    '<div class="pass"><div class="pass-head"><span class="eyebrow">Cartão de embarque</span><span class="mono" style="font-weight:600;font-size:13px">'+h(e.transporte||'Ônibus')+'</span></div><div class="pass-body">'+
+      '<div class="route"><div class="pt"><b>IDA</b><span>'+dLong(e.ida.data)+'</span></div><div class="bus">'+ICON.bus+'</div><div class="pt"><b>VOLTA</b><span>'+dLong(e.volta.data)+'</span></div></div><div class="perf"></div>'+
+      '<div class="stub"><div><small>Saída</small><b>'+h(e.ida.hora||'--:--')+'</b></div><div><small>Chegada de volta</small><b>'+h(e.volta.hora||'--:--')+'</b></div><div><small>Duração</small><b>'+durLabel(e)+'</b></div></div>'+
+      '<div class="stub" style="grid-template-columns:1fr 1fr"><div><small>Embarque</small><span>'+h(e.ida.local||'A combinar')+'</span></div><div><small>Desembarque</small><span>'+h(e.volta.local||e.ida.local||'A combinar')+'</span></div></div></div></div>'+
+    (e.descricao?'<div class="panel"><div class="eyebrow">Sobre a viagem</div><p class="prose">'+h(e.descricao)+'</p></div>':'')+
+    (rot?'<div class="panel reveal"><div class="eyebrow">Roteiro</div><ol class="timeline">'+rot+'</ol></div>':'')+
+    hotel+incl+(e.obs?'<div class="notice"><b>Importante:</b> '+h(e.obs)+'</div>':'')+
+    '</div><aside class="aside"><div class="panel"><div class="eyebrow">Valor por pessoa</div><div class="bigprice">'+money(v.adulto)+'</div>'+pix+
+      (v.crianca?'<p>Criança'+(v.criancaIdade?' ('+h(v.criancaIdade)+')':'')+': <b>'+money(v.crianca)+'</b></p>':'')+
+      (b.entrada?'<p>Entrada de <b>'+money(b.entrada)+'</b> + parcelas</p>':'')+
+      (list.length>1?'<p style="font-weight:700;color:var(--brand)">Até '+b.free.n+'x de '+money(b.free.pmt)+' sem juros'+(b.max.n>b.free.n?' ou '+b.max.n+'x de '+money(b.max.pmt):'')+'</p><details class="more"><summary>Ver todas as parcelas</summary>'+table+'</details>':'')+
+      (v.obs?'<p class="muted" style="font-size:14px">'+h(v.obs)+'</p>':'')+
+      '<div class="vagas"><div style="display:flex;justify-content:space-between;font-size:14px"><span>'+(sold?'Esgotada':'<b>'+r+'</b> vagas restantes')+'</span><span class="mono muted">'+h(e.vagas.total)+' lugares</span></div><div class="bar"><i style="width:'+(sold?100:vagasPct)+'%"></i></div></div></div>'+
+      '<div class="panel" id="reserva"><h3>'+(sold?'Entrar na lista de espera':'Quero reservar')+'</h3><p class="muted" style="font-size:14px">Sem cadastro. Escolha as poltronas, preencha e a mensagem segue pronta para o WhatsApp.</p>'+
+      '<form class="form" id="f-reserva" novalidate><div class="field" id="fw-r-nome"><label for="r-nome">Seu nome</label><input id="r-nome" autocomplete="name" required></div>'+
+      '<div class="row"><div class="field"><label for="r-ad">Adultos</label><input id="r-ad" type="number" min="1" value="1" inputmode="numeric"></div><div class="field"><label for="r-cr">Crianças</label><input id="r-cr" type="number" min="0" value="0" inputmode="numeric"></div></div>'+
+      '<div class="sim" id="sim"></div>'+
+      (+e.vagas.total&&!sold?'<details class="more" open><summary>Escolher poltronas no ônibus</summary><div style="margin-top:12px">'+busHtml(e,'pick',ui.seats)+'</div></details>':'')+
+      '<div class="field"><label for="r-pg">Como prefere pagar?</label><select id="r-pg"><option>PIX à vista</option><option>Parcelado</option><option>Ainda não sei</option></select></div>'+
+      '<div class="field"><label for="r-obs">Observação (opcional)</label><input id="r-obs" placeholder="Ex.: viajo com um idoso"></div>'+
+      waBlock('r')+'</form></div></aside></div></main>'+footer();
+}
+function updateSim(e){
+  var el=document.getElementById('sim');if(!el)return;
+  var ad=Math.max(1,parseInt(gv('r-ad'),10)||1),cr=Math.max(0,parseInt(gv('r-cr'),10)||0);
+  var v=e.valores,tot=ad*(+v.adulto||0)+cr*(+(v.crianca||v.adulto)||0),n=Math.max(1,+v.semJuros||1),ent=(+v.entrada||0)*(ad+cr);
+  el.innerHTML='<span class="muted">Total estimado ('+ad+' adulto'+(ad>1?'s':'')+(cr?' + '+cr+' criança'+(cr>1?'s':''):'')+')</span><b class="total">'+money(tot)+'</b>'+
+    '<span>'+(v.pixDesconto?'PIX: <b>'+money(tot*(1-v.pixDesconto/100))+'</b>':'')+(n>1?(v.pixDesconto?' · ':'')+(ent?'entrada '+money(ent)+' + ':'')+n+'x de <b>'+money((tot-ent)/n)+'</b> sem juros':'')+'</span>'+
+    (ui.seats.length?'<span>Poltronas escolhidas: <b class="mono">'+ui.seats.slice().sort(function(a,b){return a-b}).join(', ')+'</b></span>':'');
+}
+function waBlock(p){
+  if(!waNumber())return '<div class="notice">O WhatsApp da organizadora ainda não foi cadastrado. Ela pode configurar em Área da organizadora → Configurações.</div><button type="button" class="btn btn-wa" disabled>'+ICON.wa+' Enviar pelo WhatsApp</button>';
+  return '<a class="btn btn-wa" id="'+p+'-send" href="#" target="_blank" rel="noopener">'+ICON.wa+' Enviar pelo WhatsApp</a>'+
+    '<details class="more"><summary>Ver a mensagem / copiar</summary><div style="display:grid;gap:8px;margin-top:8px"><div class="msg-preview" id="'+p+'-prev"></div><div class="copyrow"><button type="button" class="btn btn-ghost btn-sm" data-copy="'+p+'">Copiar mensagem</button><span class="muted" style="font-size:13px">Número: <span class="mono" style="user-select:all">'+h(waPretty())+'</span></span></div></div></details>';
+}
+function reservaMsg(e){
+  var ad=parseInt(gv('r-ad'),10)||1,cr=parseInt(gv('r-cr'),10)||0;
+  return 'Olá! Vi no site a excursão *'+e.titulo+'* ('+e.destino+').\n'+
+    'Ida: '+dLong(e.ida.data)+' às '+(e.ida.hora||'--')+'\nVolta: '+dLong(e.volta.data)+'\n\n'+
+    'Nome: '+(gv('r-nome')||'-')+'\nPessoas: '+ad+' adulto'+(ad>1?'s':'')+(cr?', '+cr+' criança'+(cr>1?'s':''):'')+
+    (ui.seats.length?'\nPoltronas desejadas: '+ui.seats.slice().sort(function(a,b){return a-b}).join(', '):'')+
+    '\nPagamento: '+gv('r-pg')+(gv('r-obs')?'\nObs.: '+gv('r-obs'):'')+'\n\nGostaria de '+(e.status==='esgotada'?'entrar na lista de espera':'reservar')+'. Obrigado(a)!';
+}
+
+/* ---------- custom trip ---------- */
+function viewCustom(){
+  var c=S.config,pl=publicList().filter(function(e){return cover(e)}),bg=pl[pl.length-1];
+  var opt=function(id,label,arr){return '<div class="field"><label for="'+id+'">'+label+'</label><select id="'+id+'">'+arr.map(function(o){return '<option>'+h(o)+'</option>'}).join('')+'</select></div>'};
+  var ideas=['Gramado e Canela','Beto Carrero World','Aparecida','Holambra','Caldas Novas','Olímpia (Thermas)','Rio de Janeiro','Foz do Iguaçu','Porto de Galinhas','Bonito - MS'];
+  return header()+'<main class="wrap">'+
+    '<div class="custom-hero">'+(bg?'<img src="'+h(cover(bg))+'" alt="">':'')+'<div><div class="eyebrow rise" style="color:rgba(255,255,255,.85)">Orçamento sem compromisso</div><h1 class="rise d1">Excursão personalizada</h1><p class="rise d2" style="font-size:17px;opacity:.92">Descreva a viagem dos seus sonhos. Ao enviar, o WhatsApp abre com tudo escrito para a '+h(c.nome)+' montar o orçamento.</p></div></div>'+
+    '<div class="custom-layout"><form class="panel form enter" id="f-custom" novalidate>'+
+      '<div class="row"><div class="field" id="fw-c-nome"><label for="c-nome">Seu nome</label><input id="c-nome" autocomplete="name"></div><div class="field"><label for="c-saida">Saindo de</label><input id="c-saida" value="'+h(c.cidade)+'" placeholder="Cidade de embarque"></div></div>'+
+      '<div class="field" id="fw-c-dest"><label for="c-dest">Para onde quer ir?</label><input id="c-dest" placeholder="Digite ou toque numa ideia abaixo"><div class="ideas">'+ideas.map(function(i){return '<button type="button" data-idea="'+h(i)+'">'+h(i)+'</button>'}).join('')+'</div></div>'+
+      '<div class="row"><div class="field"><label for="c-data">Data ou período</label><input id="c-data" placeholder="Ex.: feriado de abril, 2 a 5 de maio"></div>'+opt('c-tipo','Tipo de viagem',['Bate-volta','Fim de semana','Feriado prolongado','Pacote de vários dias','Ainda não sei'])+'</div>'+
+      '<div class="row"><div class="field"><label for="c-ad">Adultos</label><input id="c-ad" type="number" min="1" value="2" inputmode="numeric"></div><div class="field"><label for="c-cr">Crianças</label><input id="c-cr" type="number" min="0" value="0" inputmode="numeric"></div>'+opt('c-grupo','Quem vai?',['Família/amigos','Grupo da igreja','Escola/formatura','Empresa','Terceira idade','Outro'])+'</div>'+
+      '<div class="row">'+opt('c-transp','Transporte',['Tanto faz','Ônibus','Van','Micro-ônibus','Aéreo'])+opt('c-hosp','Hospedagem',['Não precisa (bate-volta)','Pousada simples','Hotel 3 estrelas','Hotel 4+ estrelas','Resort / all inclusive'])+'</div>'+
+      '<div class="field"><label for="c-orc">Orçamento por pessoa (opcional)</label><input id="c-orc" placeholder="Ex.: até R$ 1.500"></div>'+
+      '<div class="field"><label for="c-desc">Conte como você imagina a viagem</label><textarea id="c-desc" placeholder="Passeios que quer fazer, refeições inclusas, acessibilidade, ocasião especial..."></textarea></div>'+
+      waBlock('c')+
+    '</form>'+
+    '<aside class="aside"><div class="pass"><div class="pass-head"><span class="eyebrow">Como funciona</span></div><div class="pass-body">'+
+      '<ol class="timeline"><li><span class="day">Passo 1</span><span>Você descreve a viagem aqui, sem cadastro.</span></li><li><span class="day">Passo 2</span><span>O WhatsApp abre com a mensagem pronta. É só tocar em enviar.</span></li><li><span class="day">Passo 3</span><span>A '+h(c.nome)+' responde com roteiro, valores e formas de pagamento.</span></li></ol>'+
+      (waNumber()?'<div class="perf"></div><div class="stub" style="grid-template-columns:1fr"><div><small>WhatsApp</small><b style="user-select:all">'+h(waPretty())+'</b></div></div>':'')+
+    '</div></div><div class="badge-logo" style="justify-self:center;width:180px">'+logoMark(true)+'</div></aside></div></main>'+footer();
+}
+function customMsg(){
+  var ad=parseInt(gv('c-ad'),10)||1,cr=parseInt(gv('c-cr'),10)||0;
+  return 'Olá! Gostaria de um orçamento de *excursão personalizada*.\n\n'+
+    'Nome: '+(gv('c-nome')||'-')+'\nSaindo de: '+(gv('c-saida')||'-')+'\nDestino: '+(gv('c-dest')||'-')+'\nData/período: '+(gv('c-data')||'a combinar')+
+    '\nTipo: '+gv('c-tipo')+'\nPessoas: '+ad+' adulto'+(ad>1?'s':'')+(cr?', '+cr+' criança'+(cr>1?'s':''):'')+' ('+gv('c-grupo')+')'+
+    '\nTransporte: '+gv('c-transp')+'\nHospedagem: '+gv('c-hosp')+(gv('c-orc')?'\nOrçamento por pessoa: '+gv('c-orc'):'')+
+    '\n\nDetalhes:\n'+(gv('c-desc')||'-');
+}
+function syncWa(){
+  var r=route(),msg=null,p=null,e=null;
+  if(r==='personalizada'){msg=customMsg();p='c'}
+  else{e=findEx(r);if(e){msg=reservaMsg(e);p='r';updateSim(e)}}
+  if(!p)return;
+  var a=document.getElementById(p+'-send'),pv=document.getElementById(p+'-prev');
+  if(a)a.href=waLink(msg);if(pv)pv.textContent=msg;
+}
+function validate(p){
+  var req=p==='c'?[['c-nome','Escreva seu nome.'],['c-dest','Diga o destino que você quer.']]:[['r-nome','Escreva seu nome.']];
+  var ok=true;
+  req.forEach(function(x){var el=document.getElementById(x[0]),w=document.getElementById('fw-'+x[0]);if(!el||!w)return;var old=w.querySelector('.errmsg');if(old)old.remove();w.classList.remove('err');
+    if(!el.value.trim()){ok=false;void w.offsetWidth;w.classList.add('err');var m=document.createElement('div');m.className='errmsg';m.textContent=x[1];w.appendChild(m)}});
+  if(!ok){var f=document.querySelector('.field.err input,.field.err textarea');if(f)f.focus()}
+  return ok;
+}
+
+/* ---------- immersive image moments ---------- */
+function swapHero(i,fromEl){
+  var e=findEx(route());if(!e)return;var im=e.imagens[i],hero=document.getElementById('dhero');if(!im||!hero||i===ui.img)return;
+  ui.img=i;
+  document.querySelectorAll('.thumbs button').forEach(function(b){b.setAttribute('aria-current',String(+b.dataset.img===i))});
+  var cr=document.getElementById('dcredit');if(cr)cr.textContent=credit(im);
+  var hr=hero.getBoundingClientRect(),x='50%',y='100%';
+  if(fromEl){var tr=fromEl.getBoundingClientRect();x=(tr.left+tr.width/2-hr.left)+'px';y=Math.min(hr.height,(tr.top-hr.top))+'px'}
+  var layer=document.createElement('div');layer.className='layer';layer.innerHTML='<img src="'+h(imgSrc(im))+'" alt="'+h(e.titulo)+'">';
+  var old=[].slice.call(hero.querySelectorAll('.layer'));
+  hero.insertBefore(layer,document.getElementById('dcredit'));
+  if(RM||!layer.animate){old.forEach(function(o){o.remove()});return}
+  var img=layer.querySelector('img');
+  old.forEach(function(o){o.animate([{transform:'scale(1)',filter:'blur(0px) brightness(1)'},{transform:'scale(1.12)',filter:'blur(8px) brightness(.6)'}],{duration:1000,easing:'cubic-bezier(.2,.8,.2,1)',fill:'forwards'})});
+  img.animate([{transform:'scale(1.35) rotate(-1.5deg)'},{transform:'scale(1) rotate(0deg)'}],{duration:1400,easing:'cubic-bezier(.16,1,.3,1)'});
+  layer.animate([{clipPath:'circle(0% at '+x+' '+y+')'},{clipPath:'circle(150% at '+x+' '+y+')'}],{duration:1050,easing:'cubic-bezier(.7,0,.2,1)'}).onfinish=function(){old.forEach(function(o){o.remove()});layer.classList.add('kb')};
+}
+function openLightbox(list,start,title,cx,cy){
+  if(!list||!list.length)return;var i=start;
+  var lb=document.createElement('div');lb.className='lb';lb.setAttribute('role','dialog');lb.setAttribute('aria-modal','true');lb.setAttribute('aria-label','Fotos de '+title);
+  lb.innerHTML='<div class="lb-top"><b>'+h(title)+'</b><button class="lb-x" type="button">Fechar ✕</button></div><div class="lb-stage">'+(list.length>1?'<button class="lb-btn lb-prev" type="button" aria-label="Foto anterior">‹</button><button class="lb-btn lb-next" type="button" aria-label="Próxima foto">›</button>':'')+'</div>'+
+    '<div class="lb-foot"><div class="lb-cap"><span class="mono lb-count"></span><span class="lb-credit"></span></div>'+(list.length>1?'<div class="lb-strip">'+list.map(function(im,k){return '<button type="button" data-k="'+k+'" aria-label="Foto '+(k+1)+'"><img src="'+h(imgSrc(im))+'" alt=""></button>'}).join('')+'</div>':'')+'</div>';
+  document.body.appendChild(lb);document.body.style.overflow='hidden';
+  var stage=lb.querySelector('.lb-stage'),anim=!RM&&!!lb.animate;
+  function put(k,dir){
+    var nxt=(k+list.length)%list.length,lyr=document.createElement('div');lyr.className='lyr';lyr.innerHTML='<img src="'+h(imgSrc(list[nxt]))+'" alt="">';
+    var old=[].slice.call(stage.querySelectorAll('.lyr'));stage.insertBefore(lyr,stage.firstChild);i=nxt;
+    lb.querySelector('.lb-count').textContent=(i+1)+' / '+list.length;lb.querySelector('.lb-credit').textContent=credit(list[i]);
+    lb.querySelectorAll('.lb-strip button').forEach(function(b){b.setAttribute('aria-current',String(+b.dataset.k===i))});
+    if(!anim||!dir){old.forEach(function(o){o.remove()});return}
+    stage.insertBefore(lyr,old[old.length-1].nextSibling);
+    lyr.animate([{clipPath:dir>0?'inset(0 0 0 100%)':'inset(0 100% 0 0)',transform:'scale(1.12)'},{clipPath:'inset(0 0 0 0)',transform:'scale(1)'}],{duration:850,easing:'cubic-bezier(.7,0,.2,1)'});
+    old.forEach(function(o){o.animate([{transform:'translateX(0) scale(1)',opacity:1},{transform:'translateX('+(-dir*12)+'%) scale(.9)',opacity:0}],{duration:850,easing:'cubic-bezier(.7,0,.2,1)',fill:'forwards'}).onfinish=function(){o.remove()}});
+  }
+  put(i,0);
+  var at=(cx!=null?Math.round(cx)+'px '+Math.round(cy)+'px':'50% 50%');
+  if(anim){lb.animate([{clipPath:'circle(0px at '+at+')'},{clipPath:'circle(150vmax at '+at+')'}],{duration:800,easing:'cubic-bezier(.7,0,.2,1)'});
+    var fi=stage.querySelector('.lyr img');if(fi)fi.animate([{transform:'scale(1.3)',filter:'blur(14px)'},{transform:'scale(1)',filter:'blur(0px)'}],{duration:1100,easing:'cubic-bezier(.16,1,.3,1)'})}
+  function close(){
+    document.removeEventListener('keydown',key);document.body.style.overflow='';
+    if(!anim){lb.remove();return}
+    lb.animate([{clipPath:'circle(150vmax at '+at+')'},{clipPath:'circle(0px at '+at+')'}],{duration:600,easing:'cubic-bezier(.7,0,.2,1)',fill:'forwards'}).onfinish=function(){lb.remove()};
+  }
+  function key(ev){if(ev.key==='Escape')close();else if(ev.key==='ArrowRight')put(i+1,1);else if(ev.key==='ArrowLeft')put(i-1,-1)}
+  document.addEventListener('keydown',key);
+  lb.addEventListener('click',function(ev){var t=ev.target.closest('button');if(!t)return;
+    if(t.classList.contains('lb-x'))close();else if(t.classList.contains('lb-next'))put(i+1,1);else if(t.classList.contains('lb-prev'))put(i-1,-1);else if(t.dataset.k!=null){var k=+t.dataset.k;if(k!==i)put(k,k>i?1:-1)}});
+  var sx=null;stage.addEventListener('pointerdown',function(ev){sx=ev.clientX});
+  stage.addEventListener('pointerup',function(ev){if(sx==null)return;var dx=ev.clientX-sx;sx=null;if(Math.abs(dx)>50&&list.length>1)put(i+(dx<0?1:-1),dx<0?1:-1)});
+  lb.querySelector('.lb-x').focus();
+}
+function flipFromCard(cardEl){
+  var img=cardEl.querySelector('img');if(!img||RM||!document.body.animate)return null;
+  var r=img.getBoundingClientRect();if(!r.width)return null;
+  var ov=document.createElement('div');ov.className='flip';ov.style.cssText='left:'+r.left+'px;top:'+r.top+'px;width:'+r.width+'px;height:'+r.height+'px;border-radius:16px';
+  ov.innerHTML='<img src="'+h(img.currentSrc||img.src)+'" alt="">';
+  var w=document.createElement('div');w.className='wash';w.style.setProperty('--cx',(r.left+r.width/2)+'px');w.style.setProperty('--cy',(r.top+r.height/2)+'px');
+  document.body.appendChild(w);document.body.appendChild(ov);
+  w.animate([{opacity:0},{opacity:1}],{duration:350,fill:'forwards'});
+  ov.animate([{transform:'scale(1)'},{transform:'scale(1.05)'}],{duration:200,easing:'ease-out',fill:'forwards'});
+  return {ov:ov,wash:w,from:r};
+}
+function landFlip(){
+  var f=ui.flip;ui.flip=null;if(!f)return;
+  var hero=document.getElementById('dhero');
+  if(!hero){f.ov.remove();f.wash.remove();return}
+  var t=hero.getBoundingClientRect();hero.style.opacity='0';
+  var a=f.ov.animate([{left:f.from.left+'px',top:f.from.top+'px',width:f.from.width+'px',height:f.from.height+'px',borderRadius:'16px',transform:'scale(1.05)'},
+    {left:(t.left-20)+'px',top:(t.top-14)+'px',width:(t.width+40)+'px',height:(t.height+28)+'px',borderRadius:'30px',transform:'scale(1)',offset:.75},
+    {left:t.left+'px',top:t.top+'px',width:t.width+'px',height:t.height+'px',borderRadius:'24px',transform:'scale(1)'}],{duration:900,easing:'cubic-bezier(.7,0,.2,1)',fill:'forwards'});
+  f.ov.querySelector('img').animate([{transform:'scale(1)'},{transform:'scale(1.18)'}],{duration:900,easing:'cubic-bezier(.7,0,.2,1)',fill:'forwards'});
+  a.onfinish=function(){hero.style.opacity='';f.ov.animate([{opacity:1},{opacity:0}],{duration:260,fill:'forwards'}).onfinish=function(){f.ov.remove()};
+    f.wash.animate([{opacity:1},{opacity:0}],{duration:400,fill:'forwards'}).onfinish=function(){f.wash.remove()}};
+}
+
+/* ---------- admin ---------- */
+function adminHeader(){
+  return '<header class="top admin-top"><div class="wrap"><a class="logo" href="#admin"><span class="logo-mark">'+logoMark(false)+'</span><span class="logo-txt"><b>'+h(S.config.nome)+'</b><span>Painel da organizadora</span></span></a>'+
+   '<nav class="nav"><a href="#">Ver site</a>'+(authed()&&!DEMO?'<a href="#admin" data-act="logout">Sair</a>':'')+'</nav></div></header>'+(DEMO?'<div class="wrap" style="padding-top:14px"><div class="notice"><b>Versão de apresentação.</b> Pode testar à vontade: cadastrar, editar e apagar excursões. Nada fica salvo, tudo volta ao normal quando a página é recarregada.</div></div>':'');
+}
+function authed(){if(DEMO)return true;return !!(S.admin&&ss('adm')===S.admin.hash)}
+async function hashPw(login,pw,salt){
+  var data=new TextEncoder().encode(salt+'|'+login.trim().toLowerCase()+'|'+pw);
+  try{var buf=await crypto.subtle.digest('SHA-256',data);return Array.from(new Uint8Array(buf)).map(function(b){return b.toString(16).padStart(2,'0')}).join('')}
+  catch(e){var x=5381;for(var i=0;i<data.length;i++)x=((x<<5)+x+data[i])>>>0;return 'f'+x.toString(16)}
+}
+function errBox(){return ui.err?'<div class="notice bad" role="alert" style="margin-bottom:14px">'+h(ui.err)+'</div>':''}
+function viewLogin(){
+  var setup=!S.admin;
+  return adminHeader()+'<main class="wrap"><div class="login panel enter"><div class="badge-logo" style="width:120px;justify-self:center">'+logoMark(true)+'</div><div class="eyebrow">'+(setup?'Primeiro acesso':'Entrar')+'</div>'+
+    '<h2>'+(setup?'Crie seu login e senha':'Acesse o painel')+'</h2>'+
+    '<p class="muted" style="font-size:14.5px">'+(setup?'Escolha um login e uma senha. Você vai usar os dois para entrar sempre que for cadastrar ou editar excursões.':'Use o login e a senha que você escolheu.')+'</p>'+
+    errBox()+
+    '<form class="form" id="f-login" novalidate><div class="field"><label for="l-user">Login</label><input id="l-user" autocomplete="username" required></div>'+
+    '<div class="field"><label for="l-pw">Senha</label><input id="l-pw" type="password" autocomplete="'+(setup?'new-password':'current-password')+'" required>'+(setup?'<span class="hint">Mínimo de 6 caracteres.</span>':'')+'</div>'+
+    (setup?'<div class="field"><label for="l-pw2">Repita a senha</label><input id="l-pw2" type="password" autocomplete="new-password" required></div>':'')+
+    '<button class="btn btn-brand" type="submit" '+(ui.saving?'disabled':'')+'>'+(ui.saving?'Salvando...':setup?'Criar acesso':'Entrar')+'</button></form>'+
+    (setup?'':'<details class="more"><summary>Esqueci minha senha</summary><div style="display:grid;gap:8px;margin-top:8px"><p class="muted" style="font-size:14px">Quem tem permissão de edição deste site pode apagar o acesso atual e criar outro. As excursões não são apagadas.</p>'+
+      (ui.confirm==='reset'?'<div class="confirm">Apagar o login atual? <button class="btn btn-danger btn-sm" data-act="reset-yes">Sim, apagar</button><button class="btn btn-ghost btn-sm" data-act="cancel">Cancelar</button></div>':'<button class="btn btn-ghost btn-sm" data-act="reset">Redefinir acesso</button>')+'</div></details>')+
+    '</div></main>';
+}
+function viewAdmin(){
+  if(!authed())return viewLogin();
+  if(ui.draft)return viewEditor();
+  var tabs='<div class="tabs" role="tablist"><button role="tab" data-tab="excursoes" aria-selected="'+(ui.tab==='excursoes')+'">Excursões ('+S.excursoes.length+')</button><button role="tab" data-tab="config" aria-selected="'+(ui.tab==='config')+'">Configurações</button></div>';
+  var body;
+  if(ui.tab==='config')body=viewConfig();
+  else{
+    var list=S.excursoes.slice().sort(function(a,b){return (a.ida.data||'').localeCompare(b.ida.data||'')});
+    var hasEx=list.some(function(e){return e.exemplo});
+    body='<div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><button class="btn btn-accent" data-act="new">+ Nova excursão</button>'+
+      (hasEx?(ui.confirm==='clear-ex'?'<div class="confirm">Apagar todas as excursões de exemplo? <button class="btn btn-danger btn-sm" data-act="clear-ex-yes">Apagar</button><button class="btn btn-ghost btn-sm" data-act="cancel">Cancelar</button></div>':'<button class="btn btn-ghost" data-act="clear-ex">Apagar exemplos</button>'):'')+'</div>'+
+      (!waNumber()?'<div class="notice" style="margin-bottom:14px">Cadastre seu WhatsApp em <b>Configurações</b> para os clientes conseguirem enviar reservas e pedidos de orçamento.</div>':'')+
+      (list.length?'<div class="alist">'+list.map(function(e){
+        return '<div class="aitem"><img src="'+h(cover(e))+'" alt=""><div style="min-width:0;display:grid;gap:4px"><h4>'+h(e.titulo)+(e.exemplo?' <span class="status">exemplo</span>':'')+'</h4>'+
+          '<div class="muted mono" style="font-size:13px">'+dDM(e.ida.data)+' → '+dDM(e.volta.data)+' · '+money(e.valores.adulto)+' · '+rest(e)+'/'+h(e.vagas.total)+' vagas</div><div><span class="status '+h(e.status)+'">'+h(statusLabel(e.status))+'</span></div></div>'+
+          '<div class="acts">'+(ui.confirm==='del:'+e.id?'<div class="confirm">Apagar? <button class="btn btn-danger btn-sm" data-act="del-yes" data-id="'+h(e.id)+'">Sim</button><button class="btn btn-ghost btn-sm" data-act="cancel">Não</button></div>':
+          '<a class="btn btn-ghost btn-sm" href="#'+h(e.id)+'">Ver</a><button class="btn btn-brand btn-sm" data-act="edit" data-id="'+h(e.id)+'">Editar</button><button class="btn btn-ghost btn-sm" data-act="dup" data-id="'+h(e.id)+'">Duplicar</button><button class="btn btn-danger btn-sm" data-act="del" data-id="'+h(e.id)+'">Apagar</button>')+'</div></div>'}).join('')+'</div>'
+      :'<div class="empty"><h3>Nenhuma excursão cadastrada</h3><p class="muted">Clique em “Nova excursão” para publicar a primeira.</p></div>');
+  }
+  return adminHeader()+'<main class="wrap" style="padding-bottom:40px">'+tabs+errBox()+canEditNote()+body+'</main>';
+}
+function canEditNote(){return caps.canEdit===false?'<div class="notice bad" style="margin-bottom:14px">Esta conta só pode ver o site. Para salvar alterações, abra o site com a conta que tem permissão de edição.</div>':''}
+function statusLabel(s){return {aberta:'Vendas abertas',esgotada:'Esgotada',encerrada:'Encerrada (oculta)',rascunho:'Rascunho (oculta)'}[s]||s}
+function fld(id,label,val,o){o=o||{};var t=o.type||'text';
+  var inp=o.area?'<textarea id="'+id+'" placeholder="'+h(o.ph||'')+'"'+(o.rows?' style="min-height:'+o.rows*24+'px"':'')+'>'+h(val)+'</textarea>':
+    o.opts?'<select id="'+id+'">'+o.opts.map(function(x){var v=Array.isArray(x)?x[0]:x,l=Array.isArray(x)?x[1]:x;return '<option value="'+h(v)+'"'+(String(v)===String(val)?' selected':'')+'>'+h(l)+'</option>'}).join('')+'</select>':
+    '<input id="'+id+'" type="'+t+'" value="'+h(val)+'" placeholder="'+h(o.ph||'')+'"'+(o.step?' step="'+o.step+'"':'')+(t==='number'?' inputmode="decimal" min="0"':'')+'>';
+  return '<div class="field"><label for="'+id+'">'+label+'</label>'+inp+(o.hint?'<span class="hint">'+o.hint+'</span>':'')+'</div>';
+}
+function faqToText(f){return (f||[]).map(function(x){return x.p+'\n'+x.r}).join('\n\n')}
+function textToFaq(t){return String(t||'').split(/\n\s*\n/).map(function(b){var l=b.split('\n');return {p:(l.shift()||'').trim(),r:l.join('\n').trim()}}).filter(function(x){return x.p})}
+function viewConfig(){
+  var c=S.config;
+  return '<form class="editor" id="f-config" novalidate style="padding-bottom:20px"><fieldset><legend>Sua agência</legend>'+
+    '<div class="logo-edit"><div class="badge-logo">'+logoMark(true)+'</div><div style="display:grid;gap:8px;min-width:0;flex:1"><b>Logo</b><span class="muted" style="font-size:14px">Envie a imagem da sua logo (JPG ou PNG). Ela aparece redonda no topo, no rodapé e na página inicial.</span>'+
+    '<div class="copyrow"><label class="btn btn-ghost btn-sm" for="up-logo">'+(ui.uploading==='logo'?'Enviando...':'Enviar logo')+'</label><input type="file" id="up-logo" accept="image/*" hidden data-upload="logo">'+(c.logo&&c.logo.url?'<button type="button" class="btn btn-danger btn-sm" data-act="rm-logo">Voltar ao desenho padrão</button>':'')+'</div></div></div>'+
+    '<div class="row">'+fld('cf-nome','Nome da agência',c.nome)+fld('cf-sub','Linha abaixo do nome',c.subtitulo,{ph:'Agência de viagens'})+fld('cf-cidade','Cidade de saída',c.cidade,{ph:'Ex.: Itapetininga - SP'})+'</div>'+
+    fld('cf-slogan','Frase da marca',c.slogan)+fld('cf-apres','Texto de apresentação (página inicial)',c.apresentacao)+
+    '<div class="row">'+fld('cf-wa','WhatsApp (com DDD)',c.whatsapp,{ph:'(15) 99999-0000',hint:'É para este número que chegam reservas e orçamentos.'})+fld('cf-ig','Instagram (opcional)',c.instagram,{ph:'@lunastour'})+'</div>'+
+    fld('cf-emb','Local de embarque padrão',c.embarque,{hint:'Preenchido automaticamente nas novas excursões.'})+
+    fld('cf-sobre','Sobre você (opcional)',c.sobre,{area:1,ph:'Há quantos anos organiza excursões, como funciona a reserva...'})+
+    fld('cf-faq','Dúvidas frequentes',faqToText(c.faq),{area:1,rows:10,hint:'Primeira linha é a pergunta, as seguintes a resposta. Deixe uma linha em branco entre uma dúvida e outra.'})+
+    '<div><button class="btn btn-brand" type="submit" '+(ui.saving?'disabled':'')+'>'+(ui.saving?'Salvando...':'Salvar configurações')+'</button></div></fieldset>'+
+    '<fieldset><legend>Login e senha</legend><p class="muted" style="font-size:14px">Login atual: <b class="mono">'+h(S.admin?S.admin.login:'')+'</b>. Preencha para trocar.</p>'+
+    '<div class="row">'+fld('cf-login','Novo login',S.admin?S.admin.login:'')+fld('cf-pw','Nova senha','',{type:'password'})+fld('cf-pw2','Repita a nova senha','',{type:'password'})+'</div>'+
+    '<div><button class="btn btn-ghost" type="button" data-act="change-pw">Trocar senha</button></div></fieldset></form>';
+}
+function blankEx(){
+  return {id:uid(),exemplo:false,titulo:'',destino:'',categoria:'Fim de semana',status:'aberta',destaque:false,resumo:'',descricao:'',imagens:[],
+    ida:{data:'',hora:'',local:S.config.embarque||''},volta:{data:'',hora:'',local:S.config.embarque||''},transporte:'Ônibus executivo',
+    hotel:{nome:'',estrelas:0,quarto:'',descricao:'',comodidades:[],imagens:[]},roteiro:'',inclui:'Transporte ida e volta\nSeguro viagem',naoInclui:'',
+    valores:{adulto:0,crianca:0,criancaIdade:'',pixDesconto:5,entrada:0,parcelas:10,semJuros:10,juros:0,obs:''},vagas:{total:46},ocupadas:[],obs:''};
+}
+function imgsEditor(key,arr){
+  return '<div class="imgs" id="imgs-'+key+'">'+arr.map(function(im,i){return '<div class="imgbox"><img src="'+h(imgSrc(im))+'" alt="">'+(i===0&&key==='main'?'<span class="cover">Capa</span>':'')+
+    '<div class="ctrl">'+(i>0?'<button type="button" data-imgact="left" data-key="'+key+'" data-i="'+i+'" aria-label="Mover para a esquerda">◀</button>':'')+(i>0&&key==='main'?'<button type="button" data-imgact="cover" data-key="'+key+'" data-i="'+i+'">Capa</button>':'')+'<button type="button" data-imgact="rm" data-key="'+key+'" data-i="'+i+'">Remover</button></div></div>'}).join('')+
+    '<label class="drop" for="up-'+key+'">'+(ui.uploading===key?'Enviando fotos...':'+ Adicionar fotos<br><span style="font-weight:400;font-size:12.5px">JPG ou PNG, várias de uma vez</span>')+'</label><input type="file" id="up-'+key+'" accept="image/*" multiple hidden data-upload="'+key+'"></div>';
+}
+function viewEditor(){
+  var d=ui.draft,v=d.valores,ho=d.hotel,isNew=!S.excursoes.some(function(e){return e.id===d.id});
+  if(!Array.isArray(d.ocupadas))d.ocupadas=[];
+  return adminHeader()+'<main class="wrap"><a class="back" href="#admin" data-act="cancel-edit">'+ICON.back+' Voltar para a lista</a>'+
+   '<h2 style="font-size:30px;margin-bottom:16px">'+(isNew?'Nova excursão':'Editar: '+h(d.titulo))+'</h2>'+errBox()+canEditNote()+
+   '<form class="editor" id="f-ex" novalidate>'+
+   '<fieldset><legend>Informações principais</legend><div class="row">'+fld('e-titulo','Nome da excursão',d.titulo,{ph:'Ex.: Fim de semana em Gramado'})+fld('e-destino','Destino (cidade - UF)',d.destino,{ph:'Ex.: Gramado - RS'})+'</div>'+
+    '<div class="row">'+fld('e-cat','Tipo',d.categoria,{opts:['Bate-volta','Fim de semana','Feriado','Pacote','Religiosa','Parque','Show/evento','Compras','Réveillon','Natal']})+fld('e-status','Situação',d.status,{opts:[['aberta','Vendas abertas'],['esgotada','Esgotada (aparece com selo)'],['encerrada','Encerrada (some do site)'],['rascunho','Rascunho (não aparece)']]})+fld('e-transp','Transporte',d.transporte,{ph:'Ônibus executivo, van, leito...'})+'</div>'+
+    fld('e-resumo','Resumo curto (aparece no card)',d.resumo,{ph:'Uma frase sobre o que a viagem oferece'})+
+    fld('e-desc','Descrição completa',d.descricao,{area:1,rows:5})+
+    '<label style="display:flex;gap:8px;align-items:center;font-weight:600"><input type="checkbox" id="e-dest" '+(d.destaque?'checked':'')+'> Marcar como destaque</label></fieldset>'+
+   '<fieldset><legend>Fotos do destino</legend><p class="muted" style="font-size:14px">A primeira foto é a capa. As fotos são reduzidas automaticamente para carregar rápido no celular.</p>'+imgsEditor('main',d.imagens)+'</fieldset>'+
+   '<fieldset><legend>Ida e volta</legend><div class="row">'+fld('e-ida-d','Data de ida',d.ida.data,{type:'date'})+fld('e-ida-h','Horário de saída',d.ida.hora,{type:'time'})+'</div>'+fld('e-ida-l','Local de embarque',d.ida.local)+
+    '<div class="row">'+fld('e-vol-d','Data de volta',d.volta.data,{type:'date'})+fld('e-vol-h','Horário previsto de chegada',d.volta.hora,{type:'time'})+'</div>'+fld('e-vol-l','Local de desembarque',d.volta.local)+'</fieldset>'+
+   '<fieldset><legend>Hotel / hospedagem</legend><p class="muted" style="font-size:14px">Deixe o nome em branco se for bate-volta.</p><div class="row">'+fld('h-nome','Nome do hotel',ho.nome)+fld('h-est','Estrelas',ho.estrelas,{opts:[['0','Sem classificação'],['1','1'],['2','2'],['3','3'],['4','4'],['5','5']]})+fld('h-quarto','Tipo de quarto',ho.quarto,{ph:'Duplo, triplo...'})+'</div>'+
+    fld('h-desc','Como é o hotel',ho.descricao,{area:1})+fld('h-com','Comodidades',(ho.comodidades||[]).join(', '),{ph:'Café da manhã, piscina, Wi-Fi',hint:'Separe por vírgula.'})+
+    '<div class="field"><label>Fotos do hotel</label>'+imgsEditor('hotel',ho.imagens||[])+'</div></fieldset>'+
+   '<fieldset><legend>Roteiro e o que inclui</legend>'+fld('e-rot','Roteiro',d.roteiro,{area:1,rows:6,hint:'Uma linha por item. Ex.: "Dia 1: Saída às 22h" ou "09:00 - Missa".'})+
+    '<div class="row">'+fld('e-inc','Inclui',d.inclui,{area:1,hint:'Uma linha por item.'})+fld('e-ninc','Não inclui',d.naoInclui,{area:1,hint:'Uma linha por item.'})+'</div></fieldset>'+
+   '<fieldset><legend>Valores e parcelamento</legend><div class="row">'+fld('v-ad','Valor por pessoa (R$)',v.adulto||'',{type:'number',step:'0.01'})+fld('v-cr','Valor criança (R$)',v.crianca||'',{type:'number',step:'0.01',hint:'Deixe vazio se não houver.'})+fld('v-cri','Idade da criança',v.criancaIdade,{ph:'Ex.: 5 a 10 anos'})+'</div>'+
+    '<div class="row">'+fld('v-pix','Desconto no PIX à vista (%)',v.pixDesconto||'',{type:'number',step:'0.5'})+fld('v-ent','Entrada (R$)',v.entrada||'',{type:'number',step:'0.01',hint:'0 se não tiver entrada.'})+'</div>'+
+    '<div class="row">'+fld('v-par','Máximo de parcelas',v.parcelas||1,{type:'number',step:'1'})+fld('v-sj','Sem juros até (parcelas)',v.semJuros||1,{type:'number',step:'1'})+fld('v-jr','Juros ao mês acima disso (%)',v.juros||'',{type:'number',step:'0.01'})+'</div>'+
+    '<div id="inst-preview" class="muted" style="font-size:14px"></div>'+
+    fld('v-obs','Observação sobre valores',v.obs,{ph:'Ex.: valor por pessoa em quarto duplo'})+'</fieldset>'+
+   '<fieldset><legend>Ônibus e poltronas</legend><div class="row">'+fld('g-tot','Total de lugares',d.vagas.total,{type:'number',step:'1',hint:'O mapa abaixo se ajusta ao número de lugares.'})+'</div>'+
+    '<p style="font-size:14.5px">Toque nas poltronas já vendidas para marcar como ocupadas. Vagas restantes: <b id="rest-adm">'+Math.max(0,d.vagas.total-d.ocupadas.length)+'</b></p><div id="busbox-adm">'+busHtml(d,'adm')+'</div>'+
+    fld('e-obs','Aviso importante (opcional)',d.obs,{ph:'Ex.: levar documento com foto'})+'</fieldset>'+
+   '</form>'+
+   '<div class="savebar"><div class="wrap"><span class="note">'+(ui.saving?'Publicando...':'As mudanças só aparecem no site depois de salvar.')+'</span><button class="btn btn-ghost" data-act="cancel-edit">Cancelar</button><button class="btn btn-brand" data-act="save-ex" '+(ui.saving||ui.uploading?'disabled':'')+'>'+(ui.saving?'Salvando...':isNew?'Publicar excursão':'Salvar alterações')+'</button></div></div></main>';
+}
+function readDraft(){
+  var d=ui.draft;if(!d)return;
+  var g=function(id){var el=document.getElementById(id);return el?el.value:undefined};
+  var set=function(obj,k,id,fn){var x=g(id);if(x!==undefined)obj[k]=fn?fn(x):x.trim()};
+  set(d,'titulo','e-titulo');set(d,'destino','e-destino');set(d,'categoria','e-cat');set(d,'status','e-status');set(d,'transporte','e-transp');
+  set(d,'resumo','e-resumo');set(d,'descricao','e-desc');var cb=document.getElementById('e-dest');if(cb)d.destaque=cb.checked;
+  set(d.ida,'data','e-ida-d');set(d.ida,'hora','e-ida-h');set(d.ida,'local','e-ida-l');set(d.volta,'data','e-vol-d');set(d.volta,'hora','e-vol-h');set(d.volta,'local','e-vol-l');
+  set(d.hotel,'nome','h-nome');set(d.hotel,'estrelas','h-est',function(x){return parseInt(x,10)||0});set(d.hotel,'quarto','h-quarto');set(d.hotel,'descricao','h-desc');
+  set(d.hotel,'comodidades','h-com',function(x){return x.split(',').map(function(s){return s.trim()}).filter(Boolean)});
+  set(d,'roteiro','e-rot');set(d,'inclui','e-inc');set(d,'naoInclui','e-ninc');
+  var v=d.valores;set(v,'adulto','v-ad',numIn);set(v,'crianca','v-cr',numIn);set(v,'criancaIdade','v-cri');set(v,'pixDesconto','v-pix',numIn);set(v,'entrada','v-ent',numIn);
+  set(v,'parcelas','v-par',function(x){return Math.max(1,parseInt(x,10)||1)});set(v,'semJuros','v-sj',function(x){return Math.max(1,parseInt(x,10)||1)});set(v,'juros','v-jr',numIn);set(v,'obs','v-obs');
+  set(d.vagas,'total','g-tot',function(x){return Math.max(0,Math.min(80,parseInt(x,10)||0))});
+  d.ocupadas=(d.ocupadas||[]).filter(function(n){return n<=d.vagas.total});
+  set(d,'obs','e-obs');
+}
+function instPreview(){
+  var el=document.getElementById('inst-preview');if(!el||!ui.draft)return;readDraft();
+  var v=ui.draft.valores;if(!v.adulto){el.textContent='Preencha o valor para ver as parcelas.';return}
+  var l=installments(v),f=l.filter(function(x){return x.free}).pop(),m=l[l.length-1];
+  el.innerHTML='Como aparece no site: '+(v.entrada?'entrada de <b>'+money(v.entrada)+'</b> + ':'')+'<b>'+f.n+'x de '+money(f.pmt)+'</b> sem juros'+(m.n>f.n?' ou <b>'+m.n+'x de '+money(m.pmt)+'</b> (total '+money(m.total)+')':'')+(v.pixDesconto?' · PIX: <b>'+money(v.adulto*(1-v.pixDesconto/100))+'</b>':'');
+}
+
+/* ---------- uploads ---------- */
+function loadImg(file){return new Promise(function(res,rej){var u=URL.createObjectURL(file),im=new Image();im.onload=function(){res({im:im,u:u})};im.onerror=function(){URL.revokeObjectURL(u);rej(new Error('img'))};im.src=u})}
+async function shrink(file,max,q,type){
+  var o=await loadImg(file),im=o.im,s=Math.min(1,max/Math.max(im.naturalWidth,im.naturalHeight));
+  var c=document.createElement('canvas');c.width=Math.round(im.naturalWidth*s);c.height=Math.round(im.naturalHeight*s);
+  c.getContext('2d').drawImage(im,0,0,c.width,c.height);URL.revokeObjectURL(o.u);
+  return new Promise(function(res){c.toBlob(function(b){res({blob:b,dataUrl:b?null:c.toDataURL(type||'image/jpeg',q)})},type||'image/jpeg',q)});
+}
+function blobToDataUrl(b){return new Promise(function(res,rej){var r=new FileReader();r.onload=function(){res(r.result)};r.onerror=rej;r.readAsDataURL(b)})}
+async function toStored(file,max,q,type){
+  if(caps.assets){var r=await shrink(file,max,q,type);var up=await caps.assets.upload(r.blob);return {url:up.url,id:up.id}}
+  var r2=await shrink(file,Math.min(max,1100),.72,type);return {url:r2.dataUrl||await blobToDataUrl(r2.blob)};
+}
+async function addImages(key,files){
+  if(key==='logo'){
+    ui.uploading='logo';render();
+    try{var lg=await toStored(files[0],600,.9,'image/png');var n=clone(S);n.config.logo=lg;ui.uploading=null;persist(n,'Logo atualizada.')}
+    catch(e){ui.uploading=null;ui.err='Não foi possível enviar a logo. Tente um arquivo JPG ou PNG menor.';render()}
+    return;
+  }
+  readDraft();ui.uploading=key;ui.err='';rerenderImgs(key);
+  var arr=key==='main'?ui.draft.imagens:ui.draft.hotel.imagens,fail=0;
+  for(var i=0;i<files.length;i++){try{arr.push(await toStored(files[i],1600,.82))}catch(e){fail++}rerenderImgs(key)}
+  ui.uploading=null;rerenderImgs(key);
+  if(fail){ui.err=fail+' foto(s) não puderam ser enviadas. Tente um arquivo JPG ou PNG menor.';render()}
+  var sb=document.querySelector('[data-act="save-ex"]');if(sb)sb.disabled=false;
+}
+function rerenderImgs(key){var box=document.getElementById('imgs-'+key);if(!box)return;var arr=key==='main'?ui.draft.imagens:ui.draft.hotel.imagens;var t=document.createElement('div');t.innerHTML=imgsEditor(key,arr);box.replaceWith(t.firstChild)}
+
+/* ---------- persistence: the page republishes itself with its new state ---------- */
+function resetCss(){
+  var st=[].slice.call(document.head.querySelectorAll('style')).map(function(s){return s.textContent}).filter(function(t){return t.indexOf('safe-area')>=0})[0];
+  return st||':root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}';
+}
+function buildDoc(state){
+  var css=document.getElementById('app-style').textContent,js=document.getElementById('app-js').textContent;
+  var json=JSON.stringify(state).replace(/</g,'\\u003c');
+  return '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>'+resetCss()+'</style></head><body>'+
+    HEAD_BITS+'<style id="app-style">'+css+'</style>\n<div id="app"></div>\n<script id="state" type="application/json">'+json+SCRIPT_END+'\n<script id="app-js">'+js+SCRIPT_END+'</body></html>';
+}
+async function persist(next,toast,after){
+  if(DEMO){S=next;ui.err='';render();showToast('Apresentação: a mudança aparece agora, mas some ao recarregar a página.');return}
+  ui.saving=true;ui.err='';render();
+  try{
+    var art=caps.artifact||(window.claude&&claude.use?await claude.use('artifact'):null);
+    if(!art)throw {code:'unavailable'};
+    var html=buildDoc(next);
+    if(html.length>15e6)throw {code:'too_big'};
+    ss('toast',toast);if(after)ss('after',after);
+    await art.publish(html);
+    S=next;ui.saving=false;render();showToast(toast);ss('toast',null);
+  }catch(e){
+    ss('toast',null);ss('after',null);ui.saving=false;
+    var c=e&&e.code;
+    ui.err=c==='conflict'?'Outra pessoa salvou uma versão ao mesmo tempo. A página vai recarregar com a versão mais nova; refaça a última alteração.':
+      (c==='not_writer'||c==='not_granted')?'Esta conta não tem permissão para salvar. Abra o site com a conta que tem permissão de edição.':
+      c==='too_big'?'O site ficou grande demais com tantas fotos. Remova algumas fotos antigas e tente de novo.':
+      c==='unavailable'?'Não foi possível salvar nesta visualização. Abra o site pelo link do Claude com a conta que tem permissão de edição.':
+      'Não foi possível salvar agora. Tente novamente em alguns segundos.';
+    if(c==='not_writer'||c==='not_granted')caps.canEdit=false;
+    render();window.scrollTo(0,0);
+  }
+}
+function showToast(t){if(!t)return;var el=document.createElement('div');el.className='toast';el.setAttribute('role','status');el.textContent=t;document.body.appendChild(el);setTimeout(function(){el.remove()},3200)}
+
+/* ---------- render ---------- */
+function render(){
+  clearTimers();
+  var r=route(),html;
+  if(r==='admin')html=viewAdmin();
+  else if(r==='personalizada')html=viewCustom();
+  else{var e=findEx(r);html=e&&(e.status!=='rascunho'||authed())?viewDetail(e):viewHome()}
+  app.innerHTML=html;
+  if(r==='excursoes'||r==='contato'||r==='duvidas'){var t=document.getElementById(r==='excursoes'?'lista':r);if(t)t.scrollIntoView({behavior:RM?'auto':'smooth'})}
+  startHero();syncWa();instPreview();
+  if(ui.flip)landFlip();
+}
+
+/* ---------- events ---------- */
+app.addEventListener('input',function(ev){
+  var t=ev.target;
+  if(t.id==='busca'){ui.q=t.value;var pos=t.selectionStart;render();var b=document.getElementById('busca');if(b){b.focus();try{b.setSelectionRange(pos,pos)}catch(e){}}return}
+  if(/^(r|c)-/.test(t.id)){var w=t.closest('.field');if(w&&w.classList.contains('err')&&t.value.trim()){w.classList.remove('err');var m=w.querySelector('.errmsg');if(m)m.remove()}syncWa()}
+  if(/^v-/.test(t.id))instPreview();
+  if(t.id==='g-tot'){readDraft();var bb=document.getElementById('busbox-adm');if(bb)bb.innerHTML=busHtml(ui.draft,'adm');var ra=document.getElementById('rest-adm');if(ra)ra.textContent=Math.max(0,ui.draft.vagas.total-ui.draft.ocupadas.length)}
+});
+app.addEventListener('change',function(ev){
+  var t=ev.target;
+  if(t.dataset&&t.dataset.upload&&t.files&&t.files.length){addImages(t.dataset.upload,[].slice.call(t.files));t.value=''}
+  if(/^(r|c)-/.test(t.id))syncWa();
+});
+app.addEventListener('pointermove',function(ev){
+  if(RM||ev.pointerType!=='mouse')return;var c=ev.target.closest('.card');if(!c)return;
+  var r=c.getBoundingClientRect(),x=(ev.clientX-r.left)/r.width,y=(ev.clientY-r.top)/r.height;
+  c.classList.add('tilt');c.style.setProperty('--ry',((x-.5)*10).toFixed(2)+'deg');c.style.setProperty('--rx',((.5-y)*8).toFixed(2)+'deg');
+  c.style.setProperty('--gx',(x*100).toFixed(1)+'%');c.style.setProperty('--gy',(y*100).toFixed(1)+'%');
+});
+app.addEventListener('pointerout',function(ev){var c=ev.target.closest('.card');if(c&&!c.contains(ev.relatedTarget)){c.classList.remove('tilt');c.style.setProperty('--rx','0deg');c.style.setProperty('--ry','0deg')}});
+app.addEventListener('keydown',function(ev){if(ev.target.id==='dhero'&&(ev.key==='Enter'||ev.key===' ')){ev.preventDefault();var r=ev.target.getBoundingClientRect();var e0=findEx(route());if(e0)openLightbox(e0.imagens,ui.img,e0.titulo,r.left+r.width/2,r.top+r.height/2)}});
+app.addEventListener('click',function(ev){
+  var hero=ev.target.closest('#dhero');
+  if(hero){var e0=findEx(route());if(e0&&e0.imagens.length)openLightbox(e0.imagens,ui.img,e0.titulo,ev.clientX,ev.clientY);return}
+  var t=ev.target.closest('button,a');if(!t)return;
+  if(t.dataset.card&&!ev.metaKey&&!ev.ctrlKey&&!ev.shiftKey){
+    var src=t.classList.contains('card')?t:(document.querySelector('.card[data-card="'+t.dataset.card+'"]')||null);
+    var fl=src?flipFromCard(src):null;
+    if(fl){ev.preventDefault();ui.flip=fl;var id=t.dataset.card;setTimeout(function(){location.hash='#'+id},180)}return}
+  if(t.dataset.dot!=null){var st=document.getElementById('stage');if(st&&st._show)st._show(+t.dataset.dot);return}
+  if(t.dataset.filter){ui.filter=t.dataset.filter;render();return}
+  if(t.dataset.img!=null){swapHero(+t.dataset.img,t);return}
+  if(t.dataset.hotelimg!=null){var e1=findEx(route());if(e1)openLightbox(e1.hotel.imagens,+t.dataset.hotelimg,e1.hotel.nome,ev.clientX,ev.clientY);return}
+  if(t.dataset.idea){var dd=document.getElementById('c-dest');if(dd){dd.value=t.dataset.idea;if(dd.animate&&!RM)dd.animate([{transform:'scale(1.04)',boxShadow:'0 0 0 6px rgba(23,191,230,.35)'},{transform:'scale(1)',boxShadow:'0 0 0 0 rgba(23,191,230,0)'}],{duration:500});dd.dispatchEvent(new Event('input',{bubbles:true}))}return}
+  if(t.dataset.seat){var n=+t.dataset.seat;
+    if(route()==='admin'&&ui.draft){var o=ui.draft.ocupadas,k=o.indexOf(n);if(k>=0)o.splice(k,1);else o.push(n);t.classList.toggle('occ',k<0);t.setAttribute('aria-pressed',String(k<0));
+      var ra=document.getElementById('rest-adm');if(ra)ra.textContent=Math.max(0,ui.draft.vagas.total-o.length);return}
+    var s=ui.seats,j=s.indexOf(n);if(j>=0)s.splice(j,1);else s.push(n);t.classList.toggle('sel',j<0);t.setAttribute('aria-pressed',String(j<0));syncWa();return}
+  if(t.id==='r-send'||t.id==='c-send'){var p=t.id[0];if(!validate(p)){ev.preventDefault();return}syncWa();return}
+  if(t.dataset.copy){var p2=t.dataset.copy,txt=p2==='c'?customMsg():reservaMsg(findEx(route()));
+    var done=function(){t.textContent='Copiado!';setTimeout(function(){t.textContent='Copiar mensagem'},1800)};
+    try{navigator.clipboard.writeText(txt).then(done,function(){selectPrev(p2)})}catch(e){selectPrev(p2)}return}
+  if(t.dataset.imgact){ev.preventDefault();readDraft();var key=t.dataset.key,arr=key==='main'?ui.draft.imagens:ui.draft.hotel.imagens,i=+t.dataset.i;
+    if(t.dataset.imgact==='rm')arr.splice(i,1);else if(t.dataset.imgact==='left'){var x=arr[i];arr[i]=arr[i-1];arr[i-1]=x}else if(t.dataset.imgact==='cover'){arr.unshift(arr.splice(i,1)[0])}
+    rerenderImgs(key);return}
+  if(t.dataset.tab){ui.tab=t.dataset.tab;ui.err='';render();return}
+  var act=t.dataset.act;if(!act)return;
+  ev.preventDefault();
+  if(act==='logout'){ss('adm',null);ui.draft=null;render();return}
+  if(act==='cancel'){ui.confirm=null;render();return}
+  if(act==='reset'){ui.confirm='reset';render();return}
+  if(act==='reset-yes'){var n0=clone(S);n0.admin=null;ui.confirm=null;ss('adm',null);persist(n0,'Acesso apagado. Crie um novo login.','admin');return}
+  if(act==='rm-logo'){var nl=clone(S);delete nl.config.logo;persist(nl,'Logo padrão restaurada.');return}
+  if(act==='new'){ui.draft=blankEx();ui.err='';ss('draft',null);render();window.scrollTo(0,0);return}
+  if(act==='edit'||act==='dup'){var srcE=findEx(t.dataset.id);if(!srcE)return;ui.draft=clone(srcE);if(!ui.draft.ocupadas)ui.draft.ocupadas=[];if(act==='dup'){ui.draft.id=uid();ui.draft.titulo+=' (cópia)';ui.draft.exemplo=false;ui.draft.status='rascunho';ui.draft.ocupadas=[]}ui.err='';render();window.scrollTo(0,0);return}
+  if(act==='del'){ui.confirm='del:'+t.dataset.id;render();return}
+  if(act==='del-yes'){var n2=clone(S);n2.excursoes=n2.excursoes.filter(function(e){return e.id!==t.dataset.id});ui.confirm=null;persist(n2,'Excursão apagada.');return}
+  if(act==='clear-ex'){ui.confirm='clear-ex';render();return}
+  if(act==='clear-ex-yes'){var n3=clone(S);n3.excursoes=n3.excursoes.filter(function(e){return !e.exemplo});ui.confirm=null;persist(n3,'Exemplos apagados.');return}
+  if(act==='cancel-edit'){ui.draft=null;ui.err='';ss('draft',null);location.hash='#admin';render();return}
+  if(act==='save-ex'){
+    readDraft();var d2=ui.draft,miss=[];
+    if(!d2.titulo)miss.push('nome da excursão');if(!d2.destino)miss.push('destino');if(!d2.ida.data)miss.push('data de ida');if(!d2.volta.data)miss.push('data de volta');if(!d2.valores.adulto)miss.push('valor por pessoa');
+    if(miss.length){ui.err='Preencha: '+miss.join(', ')+'.';render();window.scrollTo(0,0);return}
+    if(d2.volta.data<d2.ida.data){ui.err='A data de volta está antes da data de ida.';render();window.scrollTo(0,0);return}
+    d2.exemplo=false;
+    var n4=clone(S),idx=n4.excursoes.findIndex(function(e){return e.id===d2.id});if(idx>=0)n4.excursoes[idx]=clone(d2);else n4.excursoes.push(clone(d2));
+    ss('draft',JSON.stringify(d2));
+    persist(n4,idx>=0?'Alterações salvas.':'Excursão publicada.').then(function(){if(!ui.err){ui.draft=null;ss('draft',null);render()}});return}
+  if(act==='change-pw'){changePw();return}
+});
+function selectPrev(p){var pv=document.getElementById(p+'-prev');if(!pv)return;var d=pv.closest('details');if(d)d.open=true;var r=document.createRange();r.selectNodeContents(pv);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+app.addEventListener('submit',async function(ev){
+  ev.preventDefault();var f=ev.target;
+  if(f.id==='f-reserva'||f.id==='f-custom'){var a=f.querySelector('.btn-wa[href]');if(a&&validate(f.id==='f-custom'?'c':'r'))a.click();return}
+  if(f.id==='f-login'){
+    var u=gv('l-user'),pw=document.getElementById('l-pw').value;
+    if(!S.admin){
+      var pw2=document.getElementById('l-pw2').value;
+      if(u.length<3){ui.err='O login precisa ter pelo menos 3 caracteres.';render();return}
+      if(pw.length<6){ui.err='A senha precisa ter pelo menos 6 caracteres.';render();return}
+      if(pw!==pw2){ui.err='As duas senhas não são iguais.';render();return}
+      var salt=Math.random().toString(36).slice(2)+Date.now().toString(36),hs=await hashPw(u,pw,salt);
+      var n=clone(S);n.admin={login:u,salt:salt,hash:hs};ss('adm',hs);
+      persist(n,'Acesso criado. Bem-vinda ao painel!','admin');return;
+    }
+    var hh=await hashPw(u,pw,S.admin.salt);
+    if(hh===S.admin.hash&&u.toLowerCase()===String(S.admin.login).toLowerCase()){ss('adm',hh);ui.err='';render()}
+    else{ui.err='Login ou senha incorretos.';render()}
+    return;
+  }
+  if(f.id==='f-config'){
+    var wa=gv('cf-wa').replace(/\D/g,'');
+    if(wa&&(wa.length<10||wa.length>13)){ui.err='O WhatsApp deve ter DDD + número, ex.: (15) 99999-0000.';render();return}
+    var n2=clone(S);
+    Object.assign(n2.config,{nome:gv('cf-nome')||'Lunas Tour',subtitulo:gv('cf-sub'),cidade:gv('cf-cidade'),slogan:gv('cf-slogan'),apresentacao:gv('cf-apres'),whatsapp:gv('cf-wa'),instagram:gv('cf-ig'),embarque:gv('cf-emb'),sobre:gv('cf-sobre'),faq:textToFaq(document.getElementById('cf-faq').value)});
+    persist(n2,'Configurações salvas.');return;
+  }
+});
+async function changePw(){
+  var u=gv('cf-login'),p=document.getElementById('cf-pw').value,p2=document.getElementById('cf-pw2').value;
+  if(u.length<3){ui.err='O login precisa ter pelo menos 3 caracteres.';render();return}
+  if(p.length<6){ui.err='A nova senha precisa ter pelo menos 6 caracteres.';render();return}
+  if(p!==p2){ui.err='As duas senhas não são iguais.';render();return}
+  var salt=Math.random().toString(36).slice(2)+Date.now().toString(36),hs=await hashPw(u,p,salt);
+  var n=clone(S);n.admin={login:u,salt:salt,hash:hs};ss('adm',hs);persist(n,'Login e senha atualizados.');
+}
+
+/* ---------- boot ---------- */
+try{var dr=ss('draft');if(dr&&route()==='admin'){ui.draft=JSON.parse(dr)}}catch(e){}
+render();
+var t0=ss('toast');if(t0){ss('toast',null);showToast(t0);if(ui.draft&&findEx(ui.draft.id)){ui.draft=null;ss('draft',null);render()}}
+if(window.claude&&claude.use){
+  claude.use('artifact').then(function(a){caps.artifact=a}).catch(function(){});
+  claude.use('assets').then(function(a){caps.assets=a;if(route()==='admin')render()}).catch(function(){});
+  claude.use('user').then(function(u){caps.user=u;if(u&&u.canEdit)return u.canEdit().then(function(v){caps.canEdit=v;if(route()==='admin')render()})}).catch(function(){});
+}
+})();
+</script>
+</body></html>

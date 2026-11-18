@@ -1,0 +1,20 @@
+Lunas Tour - versão de apresentação
+
+Site estático (index.html). O painel funciona em modo de apresentação: nada é salvo.
+
+Créditos das fotos (Wikimedia Commons):
+- fotos/gramado1.jpg: Leandro Neumann Ciuffo · CC BY 2.0 · https://commons.wikimedia.org/wiki/File:Rua_Coberta_(4654764634).jpg
+- fotos/gramado2.jpg: Aline Victor · CC BY-SA 4.0 · https://commons.wikimedia.org/wiki/File:Lago_Negro_-_Gramado_-_RS_02.jpg
+- fotos/gramado3.jpg: Rosanetur · CC BY 2.0 · https://commons.wikimedia.org/wiki/File:Catedral_de_Pedra,_Canela_RS.jpg
+- fotos/beto1.jpg: HVL · CC BY 4.0 · https://commons.wikimedia.org/wiki/File:Vila_Germ%C3%A2nica_no_Beto_Carrero_World,_Penha_SC.JPG
+- fotos/beto2.jpg: Nivaldo Cit filho · CC BY-SA 3.0 · https://commons.wikimedia.org/wiki/File:BETO_CARRERO_WORLD,_Penha,_Santa_Catarina,_Brasil_by_Nivaldo_Cit_Filho_-_panoramio.jpg
+- fotos/aparecida1.jpg: Photograph by Mike Peel (www.mikepeel.net). · CC BY-SA 4.0 · https://commons.wikimedia.org/wiki/File:Basilica_of_the_National_Shrine_of_Our_Lady_of_Aparecida_2019_46.jpg
+- fotos/porto1.jpg: Apsc777 · CC BY-SA 4.0 · https://commons.wikimedia.org/wiki/File:Porto_Seguro_na_Bahia,_vista_da_praia,.jpg
+- fotos/porto2.jpg: HVL · CC BY 3.0 · https://commons.wikimedia.org/wiki/File:Vista_da_Praia_dos_Coqueiros_em_Trancoso,_Porto_Seguro_BA.JPG
+- fotos/campos1.jpg: Governo do Estado de São Paulo · CC BY 2.0 · https://commons.wikimedia.org/wiki/File:Vista_%C3%A1rea_da_Vila_Capivari,_Campos_do_Jord%C3%A3o.jpg
+- fotos/campos2.jpg: Bruna da Silva Rodrigues · CC BY-SA 4.0 · https://commons.wikimedia.org/wiki/File:Campos_do_jord%C3%A3o_02.jpg
+- fotos/foz1.jpg: Pribruder · CC0 · https://commons.wikimedia.org/wiki/File:Cataratas_do_Igua%C3%A7u_(2022).jpg
+- fotos/foz2.jpg: MTur Destinos · Public domain · https://commons.wikimedia.org/wiki/File:Zig_Koch_Garganta_do_Diabo_no_mirante_argentino_Parque_Nacional_Igua%C3%A7u_Foz_do_Igua%C3%A7u_PR_(40667654215).jpg
+- fotos/rio1.jpg: Wilfredor · CC0 · https://commons.wikimedia.org/wiki/File:Rio_skyline_and_Cristo_Redentor_from_Sugarloaf_Mountain,_Brazil.jpg
+- fotos/rio2.jpg: Wilfredor · CC0 · https://commons.wikimedia.org/wiki/File:Ipanema_and_Leblon_as_seen_from_Morro_Dois_Irm%C3%A3os,_with_Lagoa_and_Cantagalo_in_the_background,_Rio_de_Janeiro,_Brazil.jpg
+- fotos/hotel1.jpg: Kurt Kaiser · CC0 · https://commons.wikimedia.org/wiki/File:Bed_in_hotel_room_2.jpg
